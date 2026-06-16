@@ -2,15 +2,14 @@
 
 A new Flutter project.
 
-## Getting Started
+Driving School Management System (Flutter Project)
 
-This project is a starting point for a Flutter application.
+Project Title: Driving School Management System
 
-A few resources to get you started if this is your first Flutter project:
+Description:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The Driving School Management System is a mobile application developed using Flutter to simplify the management of driving school activities. The application provides an easy-to-use platform for students, instructors, and administrators to manage driving lessons, schedules, registrations, and progress tracking.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Students can register for driving courses, book driving sessions, view learning materials, attend mock tests, and track their training progress. Instructors can manage lesson schedules, update student attendance, and monitor learner performance. Administrators can efficiently handle student records, vehicle details, instructor assignments, and course management through a centralized system.
+
+The application features a user-friendly interface, secure authentication, real-time notifications, QR code-based attendance, and responsive design for Android and iOS devices. By digitizing traditional driving school operations, the system improves efficiency, reduces paperwork, and enhances communication between students and instructors.
