@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,38 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC8jZgxvkdLmU3-OxEbW_kwXel5jSMLvFk',
-    appId: '1:1094031484275:web:c9a4323db09b30f98fd106',
-    messagingSenderId: '1094031484275',
-    projectId: 'drivingschool-646e1',
-    authDomain: 'drivingschool-646e1.firebaseapp.com',
-    storageBucket: 'drivingschool-646e1.appspot.com',
-    measurementId: 'G-4W2QXMEP1W',
+    apiKey: 'AIzaSyB_4rWM1xryS11EZ9DgL4Y4exTcnz5TGCY',
+    appId: '1:992925327648:web:3b6dae5ac4fee70634b745',
+    messagingSenderId: '992925327648',
+    projectId: 'driving-school-ad326',
+    authDomain: 'driving-school-ad326.firebaseapp.com',
+    storageBucket: 'driving-school-ad326.appspot.com',
+    measurementId: 'G-MV4Q517ZT9',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDXFa-fHYOZHyoooVjzGX72nYAVaS-XUH0',
-    appId: '1:1094031484275:android:09b2eeaf522a56c58fd106',
-    messagingSenderId: '1094031484275',
-    projectId: 'drivingschool-646e1',
-    storageBucket: 'drivingschool-646e1.appspot.com',
+    apiKey: 'AIzaSyAAWuMrxxhtnlO1W2gpGMM_7F9OiOqpyss',
+    appId: '1:992925327648:android:be9d3dc4426fe49d34b745',
+    messagingSenderId: '992925327648',
+    projectId: 'driving-school-ad326',
+    storageBucket: 'driving-school-ad326.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBIxN1fuwpu05mXlf-vHrNZ3Us-8kpnP64',
-    appId: '1:1094031484275:ios:cf454ae1fb82308f8fd106',
-    messagingSenderId: '1094031484275',
-    projectId: 'drivingschool-646e1',
-    storageBucket: 'drivingschool-646e1.appspot.com',
+    apiKey: 'AIzaSyDGdgir8cKlHM06b-wxsg_uxWRxBZOkcks',
+    appId: '1:992925327648:ios:4642cc50527efe7934b745',
+    messagingSenderId: '992925327648',
+    projectId: 'driving-school-ad326',
+    storageBucket: 'driving-school-ad326.appspot.com',
     iosBundleId: 'com.example.drivingSchool',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBIxN1fuwpu05mXlf-vHrNZ3Us-8kpnP64',
-    appId: '1:1094031484275:ios:6a03fa992b610d668fd106',
-    messagingSenderId: '1094031484275',
-    projectId: 'drivingschool-646e1',
-    storageBucket: 'drivingschool-646e1.appspot.com',
-    iosBundleId: 'com.example.drivingSchool.RunnerTests',
+    apiKey: 'AIzaSyDGdgir8cKlHM06b-wxsg_uxWRxBZOkcks',
+    appId: '1:992925327648:ios:4642cc50527efe7934b745',
+    messagingSenderId: '992925327648',
+    projectId: 'driving-school-ad326',
+    storageBucket: 'driving-school-ad326.appspot.com',
+    iosBundleId: 'com.example.drivingSchool',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyC8rwtkvWtCw6wiVLdrLbiNS8f_5tC30Vg',
+    appId: '1:992925327648:web:66ded6fd021a706834b745',
+    messagingSenderId: '992925327648',
+    projectId: 'driving-school-ad326',
+    authDomain: 'driving-school-ad326.firebaseapp.com',
+    storageBucket: 'driving-school-ad326.appspot.com',
+    measurementId: 'G-2GXGTCET84',
+  );
+
 }

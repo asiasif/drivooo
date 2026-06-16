@@ -28,32 +28,60 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  cloud_firestore: ^4.14.0
-  country_picker: ^2.0.23
-  cupertino_icons: ^1.0.2
-  firebase_auth: ^4.16.0
-  firebase_core: ^2.24.2
-  firebase_storage: ^11.6.0
   flutter:
     sdk: flutter
-  fluttertoast: ^8.2.4
+  flutter_localizations:
+    sdk: flutter
+
+  easy_localization: ^3.0.3
+
+  # UPDATED Firebase versions (required for Web + Windows)
+  firebase_core: ^4.3.0
+  firebase_auth: ^6.1.3
+  cloud_firestore: ^6.1.1
+  cloudinary_public: ^0.23.1
+  google_sign_in: ^6.2.1
+  firebase_messaging: ^16.1.0
+  http: ^1.2.0
+
+
+  # Your other packages
+  country_picker: ^2.0.23
+  cupertino_icons: ^1.0.2
+  fluttertoast: ^9.0.0
   google_fonts: ^6.1.0
   icons_plus: ^5.0.0
   iconsax: ^0.0.8
   image_picker: ^1.0.7
   intl: ^0.19.0
   loading_animation_widget: ^1.2.0+4
-  lottie: null
-  pinput: ^3.0.1
+  lottie: any
+  pinput: ^6.0.1
   provider: ^6.1.1
   table_calendar: ^3.0.9
   toast: ^0.3.0
-  upi_india: ^3.0.1
+  upi_india:
+    path: ./packages/upi_india
+  url_launcher: ^6.3.2
+  pdf: ^3.10.4
+  permission_handler: ^11.0.1
+  # ar/ml plugins removed for stability
+  printing: ^5.11.0
+  path_provider: ^2.1.1
+  open_file: ^3.3.2
+  fl_chart: ^0.69.0
+  shimmer: ^3.0.0
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  flutter_rating_bar: ^4.0.1
+  google_mlkit_text_recognition: ^0.15.0
+
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -67,6 +95,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/traffic_signs/
+    - assets/translations/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

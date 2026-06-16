@@ -1,13 +1,38 @@
 import 'package:driving_school/const.dart';
 import 'package:driving_school/controller/admin_controller.dart';
-import 'package:driving_school/controller/user_controller.dart';
+import 'package:driving_school/models/course_model.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:provider/provider.dart';
 
-class AddCourse extends StatelessWidget {
-  const AddCourse({super.key});
+class AddCourse extends StatefulWidget {
+  final CourseModel? course;
+  const AddCourse({super.key, this.course});
+
+  @override
+  State<AddCourse> createState() => _AddCourseState();
+}
+
+class _AddCourseState extends State<AddCourse> {
+  @override
+  void initState() {
+    super.initState();
+    final adminCourseController =
+        Provider.of<AdminController>(context, listen: false);
+    if (widget.course != null) {
+      adminCourseController.courseNameController.text =
+          widget.course!.courseName;
+      adminCourseController.courseHoursController.text =
+          widget.course!.courseHours.toString();
+      adminCourseController.coursePriceController.text =
+          widget.course!.coursePrice.toString();
+    } else {
+      adminCourseController.courseNameController.clear();
+      adminCourseController.courseHoursController.clear();
+      adminCourseController.coursePriceController.clear();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +59,7 @@ class AddCourse extends StatelessWidget {
                   width: 20,
                 ),
                 Text(
-                  'Add Course',
+                  widget.course == null ? 'Add Course' : 'Edit Course',
                   style: GoogleFonts.epilogue(
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
@@ -148,19 +173,33 @@ class AddCourse extends StatelessWidget {
                       onPressed: () {
                         if (adminCourseController.courseAddKey.currentState!
                             .validate()) {
-                          adminCourseController
-                              .saveCourse(
-                                  adminCourseController
+                          if (widget.course == null) {
+                            adminCourseController
+                                .saveCourse(
+                                    adminCourseController
+                                        .courseNameController.text,
+                                    int.parse(adminCourseController
+                                        .courseHoursController.text),
+                                    int.parse(adminCourseController
+                                        .coursePriceController.text))
+                                .then((value) => Navigator.of(context).pop());
+                          } else {
+                            adminCourseController.updateCourse(
+                                CourseModel(
+                                  courseID: widget.course!.courseID,
+                                  courseName: adminCourseController
                                       .courseNameController.text,
-                                  int.parse(adminCourseController
+                                  courseHours: int.parse(adminCourseController
                                       .courseHoursController.text),
-                                  int.parse(adminCourseController
-                                      .coursePriceController.text))
-                              .then((value) => Navigator.of(context).pop());
+                                  coursePrice: int.parse(adminCourseController
+                                      .coursePriceController.text),
+                                ),
+                                context);
+                          }
                         }
                       },
                       child: Text(
-                        'Upload',
+                        widget.course == null ? 'Upload' : 'Update',
                         style: GoogleFonts.epilogue(
                             fontSize: 15, color: Colors.white),
                       ),

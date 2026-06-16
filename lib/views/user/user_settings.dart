@@ -6,6 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:provider/provider.dart';
+import 'package:driving_school/views/user/edit_profile_screen.dart';
+import 'package:driving_school/widgets/language_switcher.dart';
+import 'package:easy_localization/easy_localization.dart'; // Added
 
 class UserSettings extends StatelessWidget {
   const UserSettings({super.key});
@@ -47,90 +50,102 @@ class UserSettings extends StatelessWidget {
           Align(
             alignment: Alignment.center,
             child: Padding(
-              padding: const EdgeInsets.only(
-                left: 20,
-                right: 20,
-              ),
-              child: SizedBox(
-                width: width,
-                height: 250,
-                child: Card(
-                  color: Colors.white,
-                  child: Padding(
-                    padding: const EdgeInsets.all(15),
-                    child: Expanded(
-                      child: Column(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'User Information:',
-                                style: GoogleFonts.epilogue(
-                                    fontSize: 15, fontWeight: FontWeight.w500),
+                          Text(
+                            'profile'.tr(),
+                            style: GoogleFonts.epilogue(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          Container(
+                            decoration: const BoxDecoration(
+                                shape: BoxShape.circle, color: defaultBlue),
+                            child: IconButton.filled(
+                              style: const ButtonStyle(
+                                backgroundColor:
+                                    MaterialStatePropertyAll(Colors.white),
                               ),
-                              Container(
-                                decoration: const BoxDecoration(
-                                    shape: BoxShape.circle, color: defaultBlue),
-                                child: IconButton.filled(
-                                  style: const ButtonStyle(
-                                    backgroundColor:
-                                        MaterialStatePropertyAll(Colors.white),
+                              visualDensity: VisualDensity.compact,
+                              iconSize: 20,
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const EditProfileScreen(),
                                   ),
-                                  visualDensity: VisualDensity.compact,
-                                  iconSize: 20,
-                                  onPressed: () {},
-                                  icon: const Icon(
-                                    Icons.edit_outlined,
-                                    color: Colors.amber,
-                                  ),
-                                ),
+                                );
+                              },
+                              icon: const Icon(
+                                Icons.edit_outlined,
+                                color: Colors.amber,
                               ),
-                            ],
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          TableWidget(
-                              title: 'Name:',
-                              value: userSettingController.userModel.userName),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          TableWidget(
-                              title: 'Email:',
-                              value: userSettingController.userModel.userEmail),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          TableWidget(
-                            title: 'Phone:',
-                            value: userSettingController.userModel.userNumber
-                                .toString(),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          TableWidget(
-                              title: 'Course:',
-                              value: userSettingController
-                                          .userModel.selectedCourse ==
-                                      null
-                                  ? 'No course selected'
-                                  : userSettingController
-                                      .userModel.selectedCourse!),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          TableWidget(
-                              title: 'User ID:',
-                              value: userSettingController.userModel.userID),
-                          const SizedBox(
-                            height: 10,
+                            ),
                           ),
                         ],
                       ),
-                    ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      TableWidget(
+                          title: 'Name:',  // In real prod, add to JSON
+                          value: userSettingController.userModel.userName),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      TableWidget(
+                          title: 'Email:', 
+                          value: userSettingController.userModel.userEmail),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      TableWidget(
+                        title: 'Phone:',
+                        value: userSettingController.userModel.userNumber
+                            .toString(),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      TableWidget(
+                          title: 'courses'.tr() + ':',
+                          value: userSettingController
+                                      .userModel.selectedCourse ==
+                                  null
+                              ? 'No course selected'
+                              : userSettingController
+                                  .userModel.selectedCourse!),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            child: Text(
+                              'language'.tr() + ':',
+                              style: GoogleFonts.epilogue(fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const LanguageSwitcher(),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -221,7 +236,7 @@ class UserSettings extends StatelessWidget {
                   width: 20,
                 ),
                 Text(
-                  'Settings',
+                  'settings'.tr(),
                   style: GoogleFonts.epilogue(
                     color: Colors.white,
                     fontSize: 20,
@@ -231,12 +246,7 @@ class UserSettings extends StatelessWidget {
                 const Spacer(),
                 IconButton(
                   onPressed: () async {
-                    await userSettingController.firebaseAuth.signOut().then(
-                        (value) => Navigator.of(context).pushAndRemoveUntil(
-                            MaterialPageRoute(
-                              builder: (context) => const ChooseUser(),
-                            ),
-                            (route) => false));
+                    await userSettingController.signOut(context);
                   },
                   icon: const Icon(
                     EvaIcons.log_out,

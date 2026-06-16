@@ -1,0 +1,2005 @@
+[+3994 ms] [+3959 ms]
+lib/controller/user_con
+troller.dart:823:26:
+Error: Type
+'RatingModel' not
+found.
+[   +3 ms] [   +2 ms]
+Future<void>
+addRating(RatingModel
+rating, BuildContext
+context) async {
+[        ] [        ]
+^^^^^^^^^^^
+[+3404 ms] [+3427 ms]
+lib/controller/user_con
+troller.dart:823:26:
+Error: 'RatingModel'
+isn't a type.
+[        ] [        ]
+Future<void>
+addRating(RatingModel
+rating, BuildContext
+context) async {
+[   +1 ms] [        ]
+^^^^^^^^^^^
+[        ] [        ]
+lib/controller/user_con
+troller.dart:960:23:
+Error: The method
+'BookingModel' isn't
+defined for the class
+'UserController'.
+[        ] [        ]
+- 'UserController' is
+from
+'package:driving_school
+/controller/user_contro
+ller.dart'
+('lib/controller/user_c
+ontroller.dart').
+[        ] [        ]
+Try correcting the name
+to the name of an
+existing method, or
+defining a method named
+'BookingModel'.
+[        ] [        ]
+final booking =
+BookingModel(
+[        ] [        ]
+^^^^^^^^^^^^
+[  +91 ms] [   +7 ms]
+Target
+kernel_snapshot_program
+failed: Exception
+[        ] 
+#0
+KernelSnapshot.build
+(package:flutter_tools/
+src/build_system/target
+s/common.dart:281:7)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#1
+_BuildInstance._invokeI
+nternal
+(package:flutter_tools/
+src/build_system/build_
+system.dart:876:9)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#2
+Future.wait.<anonymous
+closure>
+(dart:async/future.dart
+:528:21)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#3
+_BuildInstance.invokeTa
+rget
+(package:flutter_tools/
+src/build_system/build_
+system.dart:814:32)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#4
+Future.wait.<anonymous
+closure>
+(dart:async/future.dart
+:528:21)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#5
+_BuildInstance.invokeTa
+rget
+(package:flutter_tools/
+src/build_system/build_
+system.dart:814:32)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#6
+Future.wait.<anonymous
+closure>
+(dart:async/future.dart
+:528:21)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#7
+_BuildInstance.invokeTa
+rget
+(package:flutter_tools/
+src/build_system/build_
+system.dart:814:32)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#8
+Future.wait.<anonymous
+closure>
+(dart:async/future.dart
+:528:21)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#9
+_BuildInstance.invokeTa
+rget
+(package:flutter_tools/
+src/build_system/build_
+system.dart:814:32)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#10
+Future.wait.<anonymous
+closure>
+(dart:async/future.dart
+:528:21)
+[   +1 ms] 
+<asynchronous
+suspension>
+[        ] 
+#11
+_BuildInstance.invokeTa
+rget
+(package:flutter_tools/
+src/build_system/build_
+system.dart:814:32)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#12
+FlutterBuildSystem.buil
+d
+(package:flutter_tools/
+src/build_system/build_
+system.dart:637:16)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#13
+AssembleCommand.runComm
+and
+(package:flutter_tools/
+src/commands/assemble.d
+art:354:32)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#14
+FlutterCommand.run.<ano
+nymous closure>
+(package:flutter_tools/
+src/runner/flutter_comm
+and.dart:1558:27)
+[        ] 
+<asynchronous
+suspension>
+[   +1 ms] 
+#15
+AppContext.run.<anonymo
+us closure>
+(package:flutter_tools/
+src/base/context.dart:1
+54:19)
+[   +4 ms] 
+<asynchronous
+suspension>
+[   +2 ms] 
+#16
+CommandRunner.runComman
+d
+(package:args/command_r
+unner.dart:212:13)
+[        ] 
+<asynchronous
+suspension>
+[   +1 ms] 
+#17
+FlutterCommandRunner.ru
+nCommand.<anonymous
+closure>
+(package:flutter_tools/
+src/runner/flutter_comm
+and_runner.dart:496:9)
+[        ] 
+<asynchronous
+suspension>
+[   +1 ms] 
+#18
+AppContext.run.<anonymo
+us closure>
+(package:flutter_tools/
+src/base/context.dart:1
+54:19)
+[   +4 ms] 
+<asynchronous
+suspension>
+[   +1 ms] 
+#19
+FlutterCommandRunner.ru
+nCommand
+(package:flutter_tools/
+src/runner/flutter_comm
+and_runner.dart:431:5)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#20     run.<anonymous
+closure>.<anonymous
+closure>
+(package:flutter_tools/
+runner.dart:98:11)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#21
+AppContext.run.<anonymo
+us closure>
+(package:flutter_tools/
+src/base/context.dart:1
+54:19)
+[        ] 
+<asynchronous
+suspension>
+[   +1 ms] 
+#22     main
+(package:flutter_tools/
+executable.dart:99:3)
+[   +1 ms] 
+<asynchronous
+suspension>
+[  +65 ms] [  +97 ms] 
+[        ] 
+#0      throwToolExit
+(package:flutter_tools/
+src/base/common.dart:34
+:3)
+[        ] 
+#1
+AssembleCommand.runComm
+and
+(package:flutter_tools/
+src/commands/assemble.d
+art:373:7)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#2
+FlutterCommand.run.<ano
+nymous closure>
+(package:flutter_tools/
+src/runner/flutter_comm
+and.dart:1558:27)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#3
+AppContext.run.<anonymo
+us closure>
+(package:flutter_tools/
+src/base/context.dart:1
+54:19)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#4
+CommandRunner.runComman
+d
+(package:args/command_r
+unner.dart:212:13)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#5
+FlutterCommandRunner.ru
+nCommand.<anonymous
+closure>
+(package:flutter_tools/
+src/runner/flutter_comm
+and_runner.dart:496:9)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#6
+AppContext.run.<anonymo
+us closure>
+(package:flutter_tools/
+src/base/context.dart:1
+54:19)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#7
+FlutterCommandRunner.ru
+nCommand
+(package:flutter_tools/
+src/runner/flutter_comm
+and_runner.dart:431:5)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#8      run.<anonymous
+closure>.<anonymous
+closure>
+(package:flutter_tools/
+runner.dart:98:11)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#9
+AppContext.run.<anonymo
+us closure>
+(package:flutter_tools/
+src/base/context.dart:1
+54:19)
+[        ] 
+<asynchronous
+suspension>
+[        ] 
+#10     main
+(package:flutter_tools/
+executable.dart:99:3)
+[        ] 
+<asynchronous
+suspension>
+[  +93 ms] FAILURE:
+Build failed with an
+exception.
+[   +3 ms] * What went
+wrong:
+[        ] Execution
+failed for task
+':app:compileFlutterBui
+ldRelease'.
+[        ] > Process
+'command
+'C:\flutter\bin\flutter
+.bat'' finished with
+non-zero exit value 1
+[        ] * Try:
+[        ] > Run with
+--debug option to get
+more log output.
+[        ] > Run with
+--scan to get full
+insights.
+[        ] > Get more
+help at
+https://help.gradle.org
+.
+[        ] * Exception
+is:
+[        ]
+org.gradle.api.tasks.Ta
+skExecutionException:
+Execution failed for
+task
+':app:compileFlutterBui
+ldRelease'.
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Execut
+eActionsTaskExecuter.la
+mbda$executeIfValid$1(E
+xecuteActionsTaskExecut
+er.java:130)
+[        ] 	at
+org.gradle.internal.Try
+$Failure.ifSuccessfulOr
+Else(Try.java:293)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Execut
+eActionsTaskExecuter.ex
+ecuteIfValid(ExecuteAct
+ionsTaskExecuter.java:1
+28)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Execut
+eActionsTaskExecuter.ex
+ecute(ExecuteActionsTas
+kExecuter.java:116)
+[   +1 ms] 	at
+org.gradle.api.internal
+.tasks.execution.Finali
+zePropertiesTaskExecute
+r.execute(FinalizePrope
+rtiesTaskExecuter.java:
+46)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Resolv
+eTaskExecutionModeExecu
+ter.execute(ResolveTask
+ExecutionModeExecuter.j
+ava:51)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.SkipTa
+skWithNoActionsExecuter
+.execute(SkipTaskWithNo
+ActionsExecuter.java:57
+)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.SkipOn
+lyIfTaskExecuter.execut
+e(SkipOnlyIfTaskExecute
+r.java:74)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.CatchE
+xceptionTaskExecuter.ex
+ecute(CatchExceptionTas
+kExecuter.java:36)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter$1.exe
+cuteTask(EventFiringTas
+kExecuter.java:77)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter$1.cal
+l(EventFiringTaskExecut
+er.java:55)
+[   +4 ms] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter$1.cal
+l(EventFiringTaskExecut
+er.java:52)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:209)
+[   +1 ms] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:204)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:66)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:166)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.call(Defau
+ltBuildOperationRunner.
+java:53)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter.execu
+te(EventFiringTaskExecu
+ter.java:52)
+[        ] 	at
+org.gradle.execution.pl
+an.LocalTaskNodeExecuto
+r.execute(LocalTaskNode
+Executor.java:42)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$InvokeNodeEx
+ecutorsAction.execute(D
+efaultTaskExecutionGrap
+h.java:331)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$InvokeNodeEx
+ecutorsAction.execute(D
+efaultTaskExecutionGrap
+h.java:318)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$BuildOperati
+onAwareExecutionAction.
+lambda$execute$0(Defaul
+tTaskExecutionGraph.jav
+a:314)
+[   +1 ms] 	at
+org.gradle.internal.ope
+rations.CurrentBuildOpe
+rationRef.with(CurrentB
+uildOperationRef.java:8
+5)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$BuildOperati
+onAwareExecutionAction.
+execute(DefaultTaskExec
+utionGraph.java:314)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$BuildOperati
+onAwareExecutionAction.
+execute(DefaultTaskExec
+utionGraph.java:303)
+[        ] 	at
+org.gradle.execution.pl
+an.DefaultPlanExecutor$
+ExecutorWorker.execute(
+DefaultPlanExecutor.jav
+a:459)
+[        ] 	at
+org.gradle.execution.pl
+an.DefaultPlanExecutor$
+ExecutorWorker.run(Defa
+ultPlanExecutor.java:37
+6)
+[        ] 	at
+org.gradle.execution.pl
+an.DefaultPlanExecutor.
+process(DefaultPlanExec
+utor.java:111)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph.executeWithS
+ervices(DefaultTaskExec
+utionGraph.java:138)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph.execute(Defa
+ultTaskExecutionGraph.j
+ava:123)
+[        ] 	at
+org.gradle.execution.Se
+lectedTaskExecutionActi
+on.execute(SelectedTask
+ExecutionAction.java:35
+)
+[        ] 	at
+org.gradle.execution.Dr
+yRunBuildExecutionActio
+n.execute(DryRunBuildEx
+ecutionAction.java:51)
+[        ] 	at
+org.gradle.execution.Bu
+ildOperationFiringBuild
+WorkerExecutor$ExecuteT
+asks.call(BuildOperatio
+nFiringBuildWorkerExecu
+tor.java:54)
+[        ] 	at
+org.gradle.execution.Bu
+ildOperationFiringBuild
+WorkerExecutor$ExecuteT
+asks.call(BuildOperatio
+nFiringBuildWorkerExecu
+tor.java:43)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:209)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:204)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:66)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:166)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.call(Defau
+ltBuildOperationRunner.
+java:53)
+[   +1 ms] 	at
+org.gradle.execution.Bu
+ildOperationFiringBuild
+WorkerExecutor.execute(
+BuildOperationFiringBui
+ldWorkerExecutor.java:4
+0)
+[        ] 	at
+org.gradle.internal.bui
+ld.DefaultBuildLifecycl
+eController.lambda$exec
+uteTasks$10(DefaultBuil
+dLifecycleController.ja
+va:313)
+[        ] 	at
+org.gradle.internal.mod
+el.StateTransitionContr
+oller.doTransition(Stat
+eTransitionController.j
+ava:266)
+[        ] 	at
+org.gradle.internal.mod
+el.StateTransitionContr
+oller.lambda$tryTransit
+ion$8(StateTransitionCo
+ntroller.java:177)
+[        ] 	at
+org.gradle.internal.wor
+k.DefaultSynchronizer.w
+ithLock(DefaultSynchron
+izer.java:44)
+[        ] 	at
+org.gradle.internal.mod
+el.StateTransitionContr
+oller.tryTransition(Sta
+teTransitionController.
+java:177)
+[        ] 	at
+org.gradle.internal.bui
+ld.DefaultBuildLifecycl
+eController.executeTask
+s(DefaultBuildLifecycle
+Controller.java:304)
+[        ] 	at
+org.gradle.internal.bui
+ld.DefaultBuildWorkGrap
+hController$DefaultBuil
+dWorkGraph.runWork(Defa
+ultBuildWorkGraphContro
+ller.java:220)
+[        ] 	at
+org.gradle.internal.wor
+k.DefaultWorkerLeaseSer
+vice.withLocks(DefaultW
+orkerLeaseService.java:
+263)
+[        ] 	at
+org.gradle.internal.wor
+k.DefaultWorkerLeaseSer
+vice.runAsWorkerThread(
+DefaultWorkerLeaseServi
+ce.java:127)
+[        ] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller.doRun(DefaultBui
+ldController.java:181)
+[        ] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller.access$000(Defau
+ltBuildController.java:
+50)
+[        ] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller$BuildOpRunnable.
+lambda$run$0(DefaultBui
+ldController.java:198)
+[        ] 	at
+org.gradle.internal.ope
+rations.CurrentBuildOpe
+rationRef.with(CurrentB
+uildOperationRef.java:8
+5)
+[        ] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller$BuildOpRunnable.
+run(DefaultBuildControl
+ler.java:198)
+[        ] 	at
+java.base/java.util.con
+current.Executors$Runna
+bleAdapter.call(Executo
+rs.java:539)
+[        ] 	at
+java.base/java.util.con
+current.FutureTask.run(
+FutureTask.java:264)
+[        ] 	at
+org.gradle.internal.con
+current.ExecutorPolicy$
+CatchAndRecordFailures.
+onExecute(ExecutorPolic
+y.java:64)
+[        ] 	at
+org.gradle.internal.con
+current.AbstractManaged
+Executor$1.run(Abstract
+ManagedExecutor.java:48
+)
+[        ] 	at
+java.base/java.util.con
+current.ThreadPoolExecu
+tor.runWorker(ThreadPoo
+lExecutor.java:1136)
+[        ] 	at
+java.base/java.util.con
+current.ThreadPoolExecu
+tor$Worker.run(ThreadPo
+olExecutor.java:635)
+[        ] 	at
+java.base/java.lang.Thr
+ead.run(Thread.java:840
+)
+[        ] Caused by:
+org.gradle.process.inte
+rnal.ExecException:
+Process 'command
+'C:\flutter\bin\flutter
+.bat'' finished with
+non-zero exit value 1
+[        ] 	at
+org.gradle.process.inte
+rnal.DefaultExecHandle$
+ExecResultImpl.assertNo
+rmalExitValue(DefaultEx
+ecHandle.java:442)
+[        ] 	at
+org.gradle.process.inte
+rnal.DefaultExecAction.
+execute(DefaultExecActi
+on.java:38)
+[        ] 	at
+org.gradle.process.inte
+rnal.DefaultExecActionF
+actory.exec(DefaultExec
+ActionFactory.java:202)
+[        ] 	at
+org.gradle.api.internal
+.project.DefaultProject
+.exec(DefaultProject.ja
+va:1289)
+[        ] 	at
+org.gradle.api.internal
+.project.DefaultProject
+.exec(DefaultProject.ja
+va:1284)
+[        ] 	at
+java.base/jdk.internal.
+reflect.NativeMethodAcc
+essorImpl.invoke0(Nativ
+e Method)
+[        ] 	at
+java.base/jdk.internal.
+reflect.NativeMethodAcc
+essorImpl.invoke(Native
+MethodAccessorImpl.java
+:77)
+[        ] 	at
+java.base/jdk.internal.
+reflect.DelegatingMetho
+dAccessorImpl.invoke(De
+legatingMethodAccessorI
+mpl.java:43)
+[        ] 	at
+java.base/java.lang.ref
+lect.Method.invoke(Meth
+od.java:568)
+[        ] 	at
+org.codehaus.groovy.ref
+lection.CachedMethod.in
+voke(CachedMethod.java:
+107)
+[        ] 	at
+groovy.lang.MetaMethod.
+doMethodInvoke(MetaMeth
+od.java:323)
+[   +1 ms] 	at
+groovy.lang.MetaClassIm
+pl.invokeMethod(MetaCla
+ssImpl.java:1254)
+[        ] 	at
+groovy.lang.MetaClassIm
+pl.invokeMethod(MetaCla
+ssImpl.java:1030)
+[        ] 	at
+org.gradle.internal.cla
+sspath.CallIntercepting
+MetaClass.lambda$invoke
+Method$5(CallIntercepti
+ngMetaClass.java:183)
+[        ] 	at
+org.gradle.internal.cla
+sspath.CallIntercepting
+MetaClass.invokeInterce
+pted(CallInterceptingMe
+taClass.java:242)
+[        ] 	at
+org.gradle.internal.cla
+sspath.CallIntercepting
+MetaClass.invokeMethod(
+CallInterceptingMetaCla
+ss.java:183)
+[        ] 	at
+org.codehaus.groovy.run
+time.callsite.PogoMetaC
+lassSite.call(PogoMetaC
+lassSite.java:38)
+[        ] 	at
+org.codehaus.groovy.run
+time.callsite.AbstractC
+allSite.call(AbstractCa
+llSite.java:139)
+[        ] 	at
+BaseFlutterTask.buildBu
+ndle(flutter.groovy:170
+4)
+[        ] 	at
+BaseFlutterTask$buildBu
+ndle.callCurrent(Unknow
+n Source)
+[        ] 	at
+FlutterTask.build(flutt
+er.groovy:1842)
+[        ] 	at
+java.base/jdk.internal.
+reflect.NativeMethodAcc
+essorImpl.invoke0(Nativ
+e Method)
+[        ] 	at
+java.base/jdk.internal.
+reflect.NativeMethodAcc
+essorImpl.invoke(Native
+MethodAccessorImpl.java
+:77)
+[        ] 	at
+java.base/jdk.internal.
+reflect.DelegatingMetho
+dAccessorImpl.invoke(De
+legatingMethodAccessorI
+mpl.java:43)
+[        ] 	at
+java.base/java.lang.ref
+lect.Method.invoke(Meth
+od.java:568)
+[        ] 	at
+org.gradle.internal.ref
+lect.JavaMethod.invoke(
+JavaMethod.java:125)
+[        ] 	at
+org.gradle.api.internal
+.project.taskfactory.St
+andardTaskAction.doExec
+ute(StandardTaskAction.
+java:58)
+[        ] 	at
+org.gradle.api.internal
+.project.taskfactory.St
+andardTaskAction.execut
+e(StandardTaskAction.ja
+va:51)
+[        ] 	at
+org.gradle.api.internal
+.project.taskfactory.St
+andardTaskAction.execut
+e(StandardTaskAction.ja
+va:29)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.TaskEx
+ecution$3.run(TaskExecu
+tion.java:244)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$1.execute(
+DefaultBuildOperationRu
+nner.java:29)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$1.execute(
+DefaultBuildOperationRu
+nner.java:26)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:66)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:166)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.run(Defaul
+tBuildOperationRunner.j
+ava:47)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.TaskEx
+ecution.executeAction(T
+askExecution.java:229)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.TaskEx
+ecution.executeActions(
+TaskExecution.java:212)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.TaskEx
+ecution.executeWithPrev
+iousOutputFiles(TaskExe
+cution.java:195)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.TaskEx
+ecution.execute(TaskExe
+cution.java:162)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteSte
+p.executeInternal(Execu
+teStep.java:105)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteSte
+p.access$000(ExecuteSte
+p.java:44)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteSte
+p$1.call(ExecuteStep.ja
+va:59)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteSte
+p$1.call(ExecuteStep.ja
+va:56)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:209)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:204)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:66)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:166)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.call(Defau
+ltBuildOperationRunner.
+java:53)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteSte
+p.execute(ExecuteStep.j
+ava:56)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteSte
+p.execute(ExecuteStep.j
+ava:44)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.CancelExec
+utionStep.execute(Cance
+lExecutionStep.java:42)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.TimeoutSte
+p.executeWithoutTimeout
+(TimeoutStep.java:75)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.TimeoutSte
+p.execute(TimeoutStep.j
+ava:55)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.PreCreateO
+utputParentsStep.execut
+e(PreCreateOutputParent
+sStep.java:50)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.PreCreateO
+utputParentsStep.execut
+e(PreCreateOutputParent
+sStep.java:28)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.RemovePrev
+iousOutputsStep.execute
+(RemovePreviousOutputsS
+tep.java:67)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.RemovePrev
+iousOutputsStep.execute
+(RemovePreviousOutputsS
+tep.java:37)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.BroadcastC
+hangingOutputsStep.exec
+ute(BroadcastChangingOu
+tputsStep.java:61)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.BroadcastC
+hangingOutputsStep.exec
+ute(BroadcastChangingOu
+tputsStep.java:26)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.CaptureOut
+putsAfterExecutionStep.
+execute(CaptureOutputsA
+fterExecutionStep.java:
+69)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.CaptureOut
+putsAfterExecutionStep.
+execute(CaptureOutputsA
+fterExecutionStep.java:
+46)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ResolveInp
+utChangesStep.execute(R
+esolveInputChangesStep.
+java:40)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ResolveInp
+utChangesStep.execute(R
+esolveInputChangesStep.
+java:29)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.BuildCache
+Step.executeWithoutCach
+e(BuildCacheStep.java:1
+89)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.BuildCache
+Step.lambda$execute$1(B
+uildCacheStep.java:75)
+[        ] 	at
+org.gradle.internal.Eit
+her$Right.fold(Either.j
+ava:175)
+[        ] 	at
+org.gradle.internal.exe
+cution.caching.CachingS
+tate.fold(CachingState.
+java:62)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.BuildCache
+Step.execute(BuildCache
+Step.java:73)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.BuildCache
+Step.execute(BuildCache
+Step.java:48)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.StoreExecu
+tionStateStep.execute(S
+toreExecutionStateStep.
+java:46)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.StoreExecu
+tionStateStep.execute(S
+toreExecutionStateStep.
+java:35)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.SkipUpToDa
+teStep.executeBecause(S
+kipUpToDateStep.java:75
+)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.SkipUpToDa
+teStep.lambda$execute$2
+(SkipUpToDateStep.java:
+53)
+[        ] 	at
+java.base/java.util.Opt
+ional.orElseGet(Optiona
+l.java:364)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.SkipUpToDa
+teStep.execute(SkipUpTo
+DateStep.java:53)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.SkipUpToDa
+teStep.execute(SkipUpTo
+DateStep.java:35)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.legacy.Mar
+kSnapshottingInputsFini
+shedStep.execute(MarkSn
+apshottingInputsFinishe
+dStep.java:37)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.legacy.Mar
+kSnapshottingInputsFini
+shedStep.execute(MarkSn
+apshottingInputsFinishe
+dStep.java:27)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ResolveInc
+rementalCachingStateSte
+p.executeDelegate(Resol
+veIncrementalCachingSta
+teStep.java:49)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ResolveInc
+rementalCachingStateSte
+p.executeDelegate(Resol
+veIncrementalCachingSta
+teStep.java:27)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AbstractRe
+solveCachingStateStep.e
+xecute(AbstractResolveC
+achingStateStep.java:71
+)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AbstractRe
+solveCachingStateStep.e
+xecute(AbstractResolveC
+achingStateStep.java:39
+)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ResolveCha
+ngesStep.execute(Resolv
+eChangesStep.java:65)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ResolveCha
+ngesStep.execute(Resolv
+eChangesStep.java:36)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ValidateSt
+ep.execute(ValidateStep
+.java:107)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ValidateSt
+ep.execute(ValidateStep
+.java:56)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AbstractCa
+ptureStateBeforeExecuti
+onStep.execute(Abstract
+CaptureStateBeforeExecu
+tionStep.java:64)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AbstractCa
+ptureStateBeforeExecuti
+onStep.execute(Abstract
+CaptureStateBeforeExecu
+tionStep.java:43)
+[   +1 ms] 	at
+org.gradle.internal.exe
+cution.steps.AbstractSk
+ipEmptyWorkStep.execute
+WithNonEmptySources(Abs
+tractSkipEmptyWorkStep.
+java:125)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AbstractSk
+ipEmptyWorkStep.execute
+(AbstractSkipEmptyWorkS
+tep.java:56)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AbstractSk
+ipEmptyWorkStep.execute
+(AbstractSkipEmptyWorkS
+tep.java:36)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.legacy.Mar
+kSnapshottingInputsStar
+tedStep.execute(MarkSna
+pshottingInputsStartedS
+tep.java:38)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.LoadPrevio
+usExecutionStateStep.ex
+ecute(LoadPreviousExecu
+tionStateStep.java:36)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.LoadPrevio
+usExecutionStateStep.ex
+ecute(LoadPreviousExecu
+tionStateStep.java:23)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.HandleStal
+eOutputsStep.execute(Ha
+ndleStaleOutputsStep.ja
+va:75)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.HandleStal
+eOutputsStep.execute(Ha
+ndleStaleOutputsStep.ja
+va:41)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AssignMuta
+bleWorkspaceStep.lambda
+$execute$0(AssignMutabl
+eWorkspaceStep.java:35)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.TaskEx
+ecution$4.withWorkspace
+(TaskExecution.java:289
+)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AssignMuta
+bleWorkspaceStep.execut
+e(AssignMutableWorkspac
+eStep.java:31)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.AssignMuta
+bleWorkspaceStep.execut
+e(AssignMutableWorkspac
+eStep.java:22)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ChoosePipe
+lineStep.execute(Choose
+PipelineStep.java:40)
+[   +1 ms] 	at
+org.gradle.internal.exe
+cution.steps.ChoosePipe
+lineStep.execute(Choose
+PipelineStep.java:23)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteWor
+kBuildOperationFiringSt
+ep.lambda$execute$2(Exe
+cuteWorkBuildOperationF
+iringStep.java:67)
+[        ] 	at
+java.base/java.util.Opt
+ional.orElseGet(Optiona
+l.java:364)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteWor
+kBuildOperationFiringSt
+ep.execute(ExecuteWorkB
+uildOperationFiringStep
+.java:67)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.ExecuteWor
+kBuildOperationFiringSt
+ep.execute(ExecuteWorkB
+uildOperationFiringStep
+.java:39)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.IdentityCa
+cheStep.execute(Identit
+yCacheStep.java:46)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.IdentityCa
+cheStep.execute(Identit
+yCacheStep.java:34)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.IdentifySt
+ep.execute(IdentifyStep
+.java:48)
+[        ] 	at
+org.gradle.internal.exe
+cution.steps.IdentifySt
+ep.execute(IdentifyStep
+.java:35)
+[        ] 	at
+org.gradle.internal.exe
+cution.impl.DefaultExec
+utionEngine$1.execute(D
+efaultExecutionEngine.j
+ava:61)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Execut
+eActionsTaskExecuter.ex
+ecuteIfValid(ExecuteAct
+ionsTaskExecuter.java:1
+27)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Execut
+eActionsTaskExecuter.ex
+ecute(ExecuteActionsTas
+kExecuter.java:116)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Finali
+zePropertiesTaskExecute
+r.execute(FinalizePrope
+rtiesTaskExecuter.java:
+46)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.Resolv
+eTaskExecutionModeExecu
+ter.execute(ResolveTask
+ExecutionModeExecuter.j
+ava:51)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.SkipTa
+skWithNoActionsExecuter
+.execute(SkipTaskWithNo
+ActionsExecuter.java:57
+)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.SkipOn
+lyIfTaskExecuter.execut
+e(SkipOnlyIfTaskExecute
+r.java:74)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.CatchE
+xceptionTaskExecuter.ex
+ecute(CatchExceptionTas
+kExecuter.java:36)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter$1.exe
+cuteTask(EventFiringTas
+kExecuter.java:77)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter$1.cal
+l(EventFiringTaskExecut
+er.java:55)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter$1.cal
+l(EventFiringTaskExecut
+er.java:52)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:209)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:204)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:66)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:166)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.call(Defau
+ltBuildOperationRunner.
+java:53)
+[        ] 	at
+org.gradle.api.internal
+.tasks.execution.EventF
+iringTaskExecuter.execu
+te(EventFiringTaskExecu
+ter.java:52)
+[        ] 	at
+org.gradle.execution.pl
+an.LocalTaskNodeExecuto
+r.execute(LocalTaskNode
+Executor.java:42)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$InvokeNodeEx
+ecutorsAction.execute(D
+efaultTaskExecutionGrap
+h.java:331)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$InvokeNodeEx
+ecutorsAction.execute(D
+efaultTaskExecutionGrap
+h.java:318)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$BuildOperati
+onAwareExecutionAction.
+lambda$execute$0(Defaul
+tTaskExecutionGraph.jav
+a:314)
+[        ] 	at
+org.gradle.internal.ope
+rations.CurrentBuildOpe
+rationRef.with(CurrentB
+uildOperationRef.java:8
+5)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$BuildOperati
+onAwareExecutionAction.
+execute(DefaultTaskExec
+utionGraph.java:314)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph$BuildOperati
+onAwareExecutionAction.
+execute(DefaultTaskExec
+utionGraph.java:303)
+[        ] 	at
+org.gradle.execution.pl
+an.DefaultPlanExecutor$
+ExecutorWorker.execute(
+DefaultPlanExecutor.jav
+a:459)
+[        ] 	at
+org.gradle.execution.pl
+an.DefaultPlanExecutor$
+ExecutorWorker.run(Defa
+ultPlanExecutor.java:37
+6)
+[        ] 	at
+org.gradle.execution.pl
+an.DefaultPlanExecutor.
+process(DefaultPlanExec
+utor.java:111)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph.executeWithS
+ervices(DefaultTaskExec
+utionGraph.java:138)
+[        ] 	at
+org.gradle.execution.ta
+skgraph.DefaultTaskExec
+utionGraph.execute(Defa
+ultTaskExecutionGraph.j
+ava:123)
+[        ] 	at
+org.gradle.execution.Se
+lectedTaskExecutionActi
+on.execute(SelectedTask
+ExecutionAction.java:35
+)
+[        ] 	at
+org.gradle.execution.Dr
+yRunBuildExecutionActio
+n.execute(DryRunBuildEx
+ecutionAction.java:51)
+[        ] 	at
+org.gradle.execution.Bu
+ildOperationFiringBuild
+WorkerExecutor$ExecuteT
+asks.call(BuildOperatio
+nFiringBuildWorkerExecu
+tor.java:54)
+[        ] 	at
+org.gradle.execution.Bu
+ildOperationFiringBuild
+WorkerExecutor$ExecuteT
+asks.call(BuildOperatio
+nFiringBuildWorkerExecu
+tor.java:43)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:209)
+[   +1 ms] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$CallableBu
+ildOperationWorker.exec
+ute(DefaultBuildOperati
+onRunner.java:204)
+[   +1 ms] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:66)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner$2.execute(
+DefaultBuildOperationRu
+nner.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:166)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.execute(De
+faultBuildOperationRunn
+er.java:59)
+[        ] 	at
+org.gradle.internal.ope
+rations.DefaultBuildOpe
+rationRunner.call(Defau
+ltBuildOperationRunner.
+java:53)
+[        ] 	at
+org.gradle.execution.Bu
+ildOperationFiringBuild
+WorkerExecutor.execute(
+BuildOperationFiringBui
+ldWorkerExecutor.java:4
+0)
+[        ] 	at
+org.gradle.internal.bui
+ld.DefaultBuildLifecycl
+eController.lambda$exec
+uteTasks$10(DefaultBuil
+dLifecycleController.ja
+va:313)
+[        ] 	at
+org.gradle.internal.mod
+el.StateTransitionContr
+oller.doTransition(Stat
+eTransitionController.j
+ava:266)
+[        ] 	at
+org.gradle.internal.mod
+el.StateTransitionContr
+oller.lambda$tryTransit
+ion$8(StateTransitionCo
+ntroller.java:177)
+[        ] 	at
+org.gradle.internal.wor
+k.DefaultSynchronizer.w
+ithLock(DefaultSynchron
+izer.java:44)
+[        ] 	at
+org.gradle.internal.mod
+el.StateTransitionContr
+oller.tryTransition(Sta
+teTransitionController.
+java:177)
+[        ] 	at
+org.gradle.internal.bui
+ld.DefaultBuildLifecycl
+eController.executeTask
+s(DefaultBuildLifecycle
+Controller.java:304)
+[        ] 	at
+org.gradle.internal.bui
+ld.DefaultBuildWorkGrap
+hController$DefaultBuil
+dWorkGraph.runWork(Defa
+ultBuildWorkGraphContro
+ller.java:220)
+[        ] 	at
+org.gradle.internal.wor
+k.DefaultWorkerLeaseSer
+vice.withLocks(DefaultW
+orkerLeaseService.java:
+263)
+[        ] 	at
+org.gradle.internal.wor
+k.DefaultWorkerLeaseSer
+vice.runAsWorkerThread(
+DefaultWorkerLeaseServi
+ce.java:127)
+[   +1 ms] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller.doRun(DefaultBui
+ldController.java:181)
+[        ] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller.access$000(Defau
+ltBuildController.java:
+50)
+[        ] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller$BuildOpRunnable.
+lambda$run$0(DefaultBui
+ldController.java:198)
+[        ] 	at
+org.gradle.internal.ope
+rations.CurrentBuildOpe
+rationRef.with(CurrentB
+uildOperationRef.java:8
+5)
+[        ] 	at
+org.gradle.composite.in
+ternal.DefaultBuildCont
+roller$BuildOpRunnable.
+run(DefaultBuildControl
+ler.java:198)
+[        ] 	at
+java.base/java.util.con
+current.Executors$Runna
+bleAdapter.call(Executo
+rs.java:539)
+[        ] 	at
+java.base/java.util.con
+current.FutureTask.run(
+FutureTask.java:264)
+[        ] 	at
+org.gradle.internal.con
+current.ExecutorPolicy$
+CatchAndRecordFailures.
+onExecute(ExecutorPolic
+y.java:64)
+[        ] 	at
+org.gradle.internal.con
+current.AbstractManaged
+Executor$1.run(Abstract
+ManagedExecutor.java:48
+)
+[        ] 	at
+java.base/java.util.con
+current.ThreadPoolExecu
+tor.runWorker(ThreadPoo
+lExecutor.java:1136)
+[        ] 	at
+java.base/java.util.con
+current.ThreadPoolExecu
+tor$Worker.run(ThreadPo
+olExecutor.java:635)
+[        ] 	at
+java.base/java.lang.Thr
+ead.run(Thread.java:840
+)
+[   +1 ms] BUILD FAILED
+in 33s
+[  +74 ms] Gradle task
+
+assembleRelease failed
+           with exit
+code 1
+[   +3 ms] 
+           #0
+throwToolExit
+
+(package:flutter_tools/
+
+src/base/common.dart:34
+           :3)
+           #1
+
+AndroidGradleBuilder.bu
+           ildGradleApp
+
+(package:flutter_tools/
+
+src/android/gradle.dart
+           :572:7)
+
+<asynchronous
+           suspension>
+           #2
+
+AndroidGradleBuilder.bu
+           ildApk
+
+(package:flutter_tools/
+
+src/android/gradle.dart
+           :232:5)
+
+<asynchronous
+           suspension>
+           #3
+
+BuildApkCommand.runComm
+           and
+
+(package:flutter_tools/
+
+src/commands/build_apk.
+           dart:154:5)
+
+<asynchronous
+           suspension>
+           #4
+
+FlutterCommand.run.<ano
+           nymous
+closure>
+
+(package:flutter_tools/
+
+src/runner/flutter_comm
+
+and.dart:1558:27)
+
+<asynchronous
+           suspension>
+           #5
+
+AppContext.run.<anonymo
+           us closure>
+
+(package:flutter_tools/
+
+src/base/context.dart:1
+           54:19)
+
+<asynchronous
+           suspension>
+           #6
+
+CommandRunner.runComman
+           d
+
+(package:args/command_r
+
+unner.dart:212:13)
+
+<asynchronous
+           suspension>
+           #7
+
+FlutterCommandRunner.ru
+
+nCommand.<anonymous
+           closure>
+
+(package:flutter_tools/
+
+src/runner/flutter_comm
+
+and_runner.dart:496:9)
+
+<asynchronous
+           suspension>
+           #8
+
+AppContext.run.<anonymo
+           us closure>
+
+(package:flutter_tools/
+
+src/base/context.dart:1
+           54:19)
+
+<asynchronous
+           suspension>
+           #9
+
+FlutterCommandRunner.ru
+           nCommand
+
+(package:flutter_tools/
+
+src/runner/flutter_comm
+
+and_runner.dart:431:5)
+
+<asynchronous
+           suspension>
+           #10
+run.<anonymous
+
+closure>.<anonymous
+           closure>
+
+(package:flutter_tools/
+
+runner.dart:98:11)
+
+<asynchronous
+           suspension>
+           #11
+
+AppContext.run.<anonymo
+           us closure>
+
+(package:flutter_tools/
+
+src/base/context.dart:1
+           54:19)
+
+<asynchronous
+           suspension>
+           #12     main
+
+(package:flutter_tools/
+
+executable.dart:99:3)
+
+<asynchronous
+           suspension>
+           
+           

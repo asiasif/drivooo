@@ -1,0 +1,275 @@
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:compileFlutterBuildDebug
+> Task :app:packJniLibsflutterBuildDebug UP-TO-DATE
+> Task :cloud_firestore:preBuild UP-TO-DATE
+> Task :cloud_firestore:preDebugBuild UP-TO-DATE
+> Task :cloud_firestore:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_auth:preBuild UP-TO-DATE
+> Task :firebase_auth:preDebugBuild UP-TO-DATE
+> Task :firebase_auth:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_core:preBuild UP-TO-DATE
+> Task :firebase_core:preDebugBuild UP-TO-DATE
+> Task :firebase_core:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_storage:preBuild UP-TO-DATE
+> Task :firebase_storage:preDebugBuild UP-TO-DATE
+> Task :firebase_storage:writeDebugAarMetadata UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preDebugBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:writeDebugAarMetadata UP-TO-DATE
+> Task :fluttertoast:preBuild UP-TO-DATE
+> Task :fluttertoast:preDebugBuild UP-TO-DATE
+> Task :fluttertoast:writeDebugAarMetadata UP-TO-DATE
+> Task :image_picker_android:preBuild UP-TO-DATE
+> Task :image_picker_android:preDebugBuild UP-TO-DATE
+> Task :image_picker_android:writeDebugAarMetadata UP-TO-DATE
+> Task :path_provider_android:preBuild UP-TO-DATE
+> Task :path_provider_android:preDebugBuild UP-TO-DATE
+> Task :path_provider_android:writeDebugAarMetadata UP-TO-DATE
+> Task :smart_auth:preBuild UP-TO-DATE
+> Task :smart_auth:preDebugBuild UP-TO-DATE
+> Task :smart_auth:writeDebugAarMetadata UP-TO-DATE
+> Task :upi_india:preBuild UP-TO-DATE
+> Task :upi_india:preDebugBuild UP-TO-DATE
+> Task :upi_india:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:cleanMergeDebugAssets
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :cloud_firestore:mergeDebugShaders UP-TO-DATE
+> Task :cloud_firestore:compileDebugShaders NO-SOURCE
+> Task :cloud_firestore:generateDebugAssets UP-TO-DATE
+> Task :cloud_firestore:packageDebugAssets UP-TO-DATE
+> Task :firebase_auth:mergeDebugShaders UP-TO-DATE
+> Task :firebase_auth:compileDebugShaders NO-SOURCE
+> Task :firebase_auth:generateDebugAssets UP-TO-DATE
+> Task :firebase_auth:packageDebugAssets UP-TO-DATE
+> Task :firebase_core:mergeDebugShaders UP-TO-DATE
+> Task :firebase_core:compileDebugShaders NO-SOURCE
+> Task :firebase_core:generateDebugAssets UP-TO-DATE
+> Task :firebase_core:packageDebugAssets UP-TO-DATE
+> Task :firebase_storage:mergeDebugShaders UP-TO-DATE
+> Task :firebase_storage:compileDebugShaders NO-SOURCE
+> Task :firebase_storage:generateDebugAssets UP-TO-DATE
+> Task :firebase_storage:packageDebugAssets UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:mergeDebugShaders UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:compileDebugShaders NO-SOURCE
+> Task :flutter_plugin_android_lifecycle:generateDebugAssets UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:packageDebugAssets UP-TO-DATE
+> Task :fluttertoast:mergeDebugShaders UP-TO-DATE
+> Task :fluttertoast:compileDebugShaders NO-SOURCE
+> Task :fluttertoast:generateDebugAssets UP-TO-DATE
+> Task :fluttertoast:packageDebugAssets UP-TO-DATE
+> Task :image_picker_android:mergeDebugShaders UP-TO-DATE
+> Task :image_picker_android:compileDebugShaders NO-SOURCE
+> Task :image_picker_android:generateDebugAssets UP-TO-DATE
+> Task :image_picker_android:packageDebugAssets UP-TO-DATE
+> Task :path_provider_android:mergeDebugShaders UP-TO-DATE
+> Task :path_provider_android:compileDebugShaders NO-SOURCE
+> Task :path_provider_android:generateDebugAssets UP-TO-DATE
+> Task :path_provider_android:packageDebugAssets UP-TO-DATE
+> Task :smart_auth:mergeDebugShaders UP-TO-DATE
+> Task :smart_auth:compileDebugShaders NO-SOURCE
+> Task :smart_auth:generateDebugAssets UP-TO-DATE
+> Task :smart_auth:packageDebugAssets UP-TO-DATE
+> Task :upi_india:mergeDebugShaders UP-TO-DATE
+> Task :upi_india:compileDebugShaders NO-SOURCE
+> Task :upi_india:generateDebugAssets UP-TO-DATE
+> Task :upi_india:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:copyFlutterAssetsDebug
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :cloud_firestore:generateDebugResValues UP-TO-DATE
+> Task :cloud_firestore:generateDebugResources UP-TO-DATE
+> Task :cloud_firestore:packageDebugResources UP-TO-DATE
+> Task :firebase_auth:generateDebugResValues UP-TO-DATE
+> Task :firebase_auth:generateDebugResources UP-TO-DATE
+> Task :firebase_auth:packageDebugResources UP-TO-DATE
+> Task :firebase_core:generateDebugResValues UP-TO-DATE
+> Task :firebase_core:generateDebugResources UP-TO-DATE
+> Task :firebase_core:packageDebugResources UP-TO-DATE
+> Task :firebase_storage:generateDebugResValues UP-TO-DATE
+> Task :firebase_storage:generateDebugResources UP-TO-DATE
+> Task :firebase_storage:packageDebugResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateDebugResValues UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateDebugResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:packageDebugResources UP-TO-DATE
+> Task :fluttertoast:generateDebugResValues UP-TO-DATE
+> Task :fluttertoast:generateDebugResources UP-TO-DATE
+> Task :fluttertoast:packageDebugResources UP-TO-DATE
+> Task :image_picker_android:generateDebugResValues UP-TO-DATE
+> Task :image_picker_android:generateDebugResources UP-TO-DATE
+> Task :image_picker_android:packageDebugResources UP-TO-DATE
+> Task :path_provider_android:generateDebugResValues UP-TO-DATE
+> Task :path_provider_android:generateDebugResources UP-TO-DATE
+> Task :path_provider_android:packageDebugResources UP-TO-DATE
+> Task :smart_auth:generateDebugResValues UP-TO-DATE
+> Task :smart_auth:generateDebugResources UP-TO-DATE
+> Task :smart_auth:packageDebugResources UP-TO-DATE
+> Task :upi_india:generateDebugResValues UP-TO-DATE
+> Task :upi_india:generateDebugResources UP-TO-DATE
+> Task :upi_india:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :cloud_firestore:extractDeepLinksDebug UP-TO-DATE
+> Task :cloud_firestore:processDebugManifest UP-TO-DATE
+> Task :firebase_auth:extractDeepLinksDebug UP-TO-DATE
+> Task :firebase_auth:processDebugManifest UP-TO-DATE
+> Task :firebase_core:extractDeepLinksDebug UP-TO-DATE
+> Task :firebase_core:processDebugManifest UP-TO-DATE
+> Task :firebase_storage:extractDeepLinksDebug UP-TO-DATE
+> Task :firebase_storage:processDebugManifest UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:extractDeepLinksDebug UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:processDebugManifest UP-TO-DATE
+> Task :fluttertoast:extractDeepLinksDebug UP-TO-DATE
+> Task :fluttertoast:processDebugManifest UP-TO-DATE
+> Task :image_picker_android:extractDeepLinksDebug UP-TO-DATE
+> Task :image_picker_android:processDebugManifest UP-TO-DATE
+> Task :path_provider_android:extractDeepLinksDebug UP-TO-DATE
+> Task :path_provider_android:processDebugManifest UP-TO-DATE
+> Task :smart_auth:extractDeepLinksDebug UP-TO-DATE
+> Task :smart_auth:processDebugManifest UP-TO-DATE
+> Task :upi_india:extractDeepLinksDebug UP-TO-DATE
+> Task :upi_india:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest
+> Task :app:mergeDebugResources
+> Task :app:processDebugManifest
+> Task :cloud_firestore:compileDebugLibraryResources UP-TO-DATE
+> Task :cloud_firestore:parseDebugLocalResources UP-TO-DATE
+> Task :cloud_firestore:generateDebugRFile UP-TO-DATE
+> Task :firebase_auth:compileDebugLibraryResources UP-TO-DATE
+> Task :firebase_auth:parseDebugLocalResources UP-TO-DATE
+> Task :firebase_auth:generateDebugRFile UP-TO-DATE
+> Task :firebase_core:compileDebugLibraryResources UP-TO-DATE
+> Task :firebase_core:parseDebugLocalResources UP-TO-DATE
+> Task :firebase_core:generateDebugRFile UP-TO-DATE
+> Task :firebase_storage:compileDebugLibraryResources UP-TO-DATE
+> Task :firebase_storage:parseDebugLocalResources UP-TO-DATE
+> Task :firebase_storage:generateDebugRFile UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:compileDebugLibraryResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:parseDebugLocalResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateDebugRFile
+> Task :fluttertoast:compileDebugLibraryResources
+> Task :image_picker_android:compileDebugLibraryResources
+> Task :fluttertoast:parseDebugLocalResources
+> Task :image_picker_android:parseDebugLocalResources
+> Task :path_provider_android:compileDebugLibraryResources
+> Task :fluttertoast:generateDebugRFile
+> Task :image_picker_android:generateDebugRFile
+> Task :path_provider_android:parseDebugLocalResources
+> Task :smart_auth:compileDebugLibraryResources
+> Task :path_provider_android:generateDebugRFile
+> Task :smart_auth:parseDebugLocalResources
+> Task :upi_india:compileDebugLibraryResources
+> Task :app:processDebugManifestForPackage
+> Task :smart_auth:generateDebugRFile
+> Task :upi_india:parseDebugLocalResources
+> Task :cloud_firestore:generateDebugBuildConfig
+> Task :upi_india:generateDebugRFile
+> Task :cloud_firestore:javaPreCompileDebug
+> Task :firebase_core:generateDebugBuildConfig
+> Task :firebase_core:javaPreCompileDebug
+> Task :firebase_auth:generateDebugBuildConfig
+> Task :app:processDebugResources
+> Task :firebase_core:compileDebugJavaWithJavac
+> Task :firebase_auth:javaPreCompileDebug
+> Task :firebase_storage:generateDebugBuildConfig
+> Task :firebase_storage:javaPreCompileDebug
+> Task :flutter_plugin_android_lifecycle:javaPreCompileDebug
+> Task :firebase_core:bundleLibCompileToJarDebug
+> Task :cloud_firestore:compileDebugJavaWithJavac
+> Task :cloud_firestore:bundleLibCompileToJarDebug
+
+> Task :firebase_auth:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :firebase_auth:bundleLibCompileToJarDebug
+> Task :fluttertoast:compileDebugKotlin
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.14/android/src/main/kotlin/io/github/ponnamkarthik/toast/fluttertoast/MethodCallHandlerImpl.kt:59:40 'setColorFilter(Int, PorterDuff.Mode): Unit' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.14/android/src/main/kotlin/io/github/ponnamkarthik/toast/fluttertoast/MethodCallHandlerImpl.kt:77:29 'setter for view: View?' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/fluttertoast-8.2.14/android/src/main/kotlin/io/github/ponnamkarthik/toast/fluttertoast/MethodCallHandlerImpl.kt:82:58 'getter for view: View?' is deprecated. Deprecated in Java
+
+> Task :firebase_storage:compileDebugJavaWithJavac
+> Task :firebase_storage:bundleLibCompileToJarDebug
+> Task :flutter_plugin_android_lifecycle:compileDebugJavaWithJavac
+> Task :fluttertoast:javaPreCompileDebug
+> Task :flutter_plugin_android_lifecycle:bundleLibCompileToJarDebug
+> Task :image_picker_android:javaPreCompileDebug
+> Task :fluttertoast:compileDebugJavaWithJavac NO-SOURCE
+> Task :fluttertoast:bundleLibCompileToJarDebug
+> Task :image_picker_android:compileDebugJavaWithJavac
+> Task :path_provider_android:javaPreCompileDebug
+> Task :image_picker_android:bundleLibCompileToJarDebug
+> Task :path_provider_android:compileDebugJavaWithJavac
+> Task :path_provider_android:bundleLibCompileToJarDebug
+> Task :smart_auth:javaPreCompileDebug
+> Task :upi_india:javaPreCompileDebug
+> Task :app:javaPreCompileDebug
+C:\Users\USER\Desktop\doctordriving\driving_school_project\packages\upi_india\android\src\main\java\com\az\upi_india\UpiIndiaPlugin.java:30: error: cannot find symbol
+
+> Task :upi_india:compileDebugJavaWithJavac FAILED
+import io.flutter.plugin.common.PluginRegistry.Registrar;
+                                              ^
+  symbol:   class Registrar
+  location: interface PluginRegistry
+1 error
+
+> Task :smart_auth:compileDebugKotlin
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/AppSignatueHelper.kt:40:75 'GET_SIGNATURES: Int' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/AppSignatueHelper.kt:40:91 'signatures: Array<(out) Signature!>!' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:12:52 'HintRequest' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:117:22 'CredentialPickerConfig' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:143:13 'Credentials' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:143:45 'getHintPickerIntent(HintRequest): PendingIntent' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:156:34 'Credentials' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:157:28 'save(Credential): Task<Void!>' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:188:33 'CredentialRequest' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:198:32 'CredentialsClient' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:198:52 'Credentials' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:199:27 'request(CredentialRequest): Task<CredentialRequestResponse!>' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:202:37 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:231:33 'CredentialsClient' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:231:53 'Credentials' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:232:28 'delete(Credential): Task<Void!>' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:286:29 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:286:67 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:312:29 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:312:67 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:323:45 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:336:87 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:348:26 'Credential' is deprecated. Deprecated in Java
+w: file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/smart_auth-1.1.1/android/src/main/kotlin/fman/ge/smart_auth/SmartAuthPlugin.kt:348:37 'Builder' is deprecated. Deprecated in Java
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':upi_india:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2m 31s
+168 actionable tasks: 61 executed, 107 up-to-date

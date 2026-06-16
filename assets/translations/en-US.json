@@ -1,0 +1,18 @@
+{
+  "app_title": "Driving School",
+  "home": "Home",
+  "courses": "Courses",
+  "mock_test": "Mock Test",
+  "bookings": "Bookings",
+  "settings": "Settings",
+  "profile": "Profile",
+  "language": "Language",
+  "contact_us": "Contact Us",
+  "logout": "Log Out",
+  "change_language": "Change Language",
+  "english": "English",
+  "malayalam": "Malayalam",
+  "welcome": "Welcome",
+  "select_course": "Select a Course",
+  "start_learning": "Start Learning"
+}

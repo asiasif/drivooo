@@ -1,0 +1,427 @@
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:compileFlutterBuildDebug UP-TO-DATE
+> Task :app:packJniLibsflutterBuildDebug UP-TO-DATE
+> Task :cloud_firestore:preBuild UP-TO-DATE
+> Task :cloud_firestore:preDebugBuild UP-TO-DATE
+> Task :cloud_firestore:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_auth:preBuild UP-TO-DATE
+> Task :firebase_auth:preDebugBuild UP-TO-DATE
+> Task :firebase_auth:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_core:preBuild UP-TO-DATE
+> Task :firebase_core:preDebugBuild UP-TO-DATE
+> Task :firebase_core:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_storage:preBuild UP-TO-DATE
+> Task :firebase_storage:preDebugBuild UP-TO-DATE
+> Task :firebase_storage:writeDebugAarMetadata UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preDebugBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:writeDebugAarMetadata UP-TO-DATE
+> Task :fluttertoast:preBuild UP-TO-DATE
+> Task :fluttertoast:preDebugBuild UP-TO-DATE
+> Task :fluttertoast:writeDebugAarMetadata UP-TO-DATE
+> Task :image_picker_android:preBuild UP-TO-DATE
+> Task :image_picker_android:preDebugBuild UP-TO-DATE
+> Task :image_picker_android:writeDebugAarMetadata UP-TO-DATE
+> Task :path_provider_android:preBuild UP-TO-DATE
+> Task :path_provider_android:preDebugBuild UP-TO-DATE
+> Task :path_provider_android:writeDebugAarMetadata UP-TO-DATE
+> Task :smart_auth:preBuild UP-TO-DATE
+> Task :smart_auth:preDebugBuild UP-TO-DATE
+> Task :smart_auth:writeDebugAarMetadata UP-TO-DATE
+> Task :upi_india:preBuild UP-TO-DATE
+> Task :upi_india:preDebugBuild UP-TO-DATE
+> Task :upi_india:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:cleanMergeDebugAssets
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :cloud_firestore:mergeDebugShaders UP-TO-DATE
+> Task :cloud_firestore:compileDebugShaders NO-SOURCE
+> Task :cloud_firestore:generateDebugAssets UP-TO-DATE
+> Task :cloud_firestore:packageDebugAssets UP-TO-DATE
+> Task :firebase_auth:mergeDebugShaders UP-TO-DATE
+> Task :firebase_auth:compileDebugShaders NO-SOURCE
+> Task :firebase_auth:generateDebugAssets UP-TO-DATE
+> Task :firebase_auth:packageDebugAssets UP-TO-DATE
+> Task :firebase_core:mergeDebugShaders UP-TO-DATE
+> Task :firebase_core:compileDebugShaders NO-SOURCE
+> Task :firebase_core:generateDebugAssets UP-TO-DATE
+> Task :firebase_core:packageDebugAssets UP-TO-DATE
+> Task :firebase_storage:mergeDebugShaders UP-TO-DATE
+> Task :firebase_storage:compileDebugShaders NO-SOURCE
+> Task :firebase_storage:generateDebugAssets UP-TO-DATE
+> Task :firebase_storage:packageDebugAssets UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:mergeDebugShaders UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:compileDebugShaders NO-SOURCE
+> Task :flutter_plugin_android_lifecycle:generateDebugAssets UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:packageDebugAssets UP-TO-DATE
+> Task :fluttertoast:mergeDebugShaders UP-TO-DATE
+> Task :fluttertoast:compileDebugShaders NO-SOURCE
+> Task :fluttertoast:generateDebugAssets UP-TO-DATE
+> Task :fluttertoast:packageDebugAssets UP-TO-DATE
+> Task :image_picker_android:mergeDebugShaders UP-TO-DATE
+> Task :image_picker_android:compileDebugShaders NO-SOURCE
+> Task :image_picker_android:generateDebugAssets UP-TO-DATE
+> Task :image_picker_android:packageDebugAssets UP-TO-DATE
+> Task :path_provider_android:mergeDebugShaders UP-TO-DATE
+> Task :path_provider_android:compileDebugShaders NO-SOURCE
+> Task :path_provider_android:generateDebugAssets UP-TO-DATE
+> Task :path_provider_android:packageDebugAssets UP-TO-DATE
+> Task :smart_auth:mergeDebugShaders UP-TO-DATE
+> Task :smart_auth:compileDebugShaders NO-SOURCE
+> Task :smart_auth:generateDebugAssets UP-TO-DATE
+> Task :smart_auth:packageDebugAssets UP-TO-DATE
+> Task :upi_india:mergeDebugShaders UP-TO-DATE
+> Task :upi_india:compileDebugShaders NO-SOURCE
+> Task :upi_india:generateDebugAssets UP-TO-DATE
+> Task :upi_india:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:copyFlutterAssetsDebug
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :cloud_firestore:generateDebugResValues UP-TO-DATE
+> Task :cloud_firestore:generateDebugResources UP-TO-DATE
+> Task :cloud_firestore:packageDebugResources UP-TO-DATE
+> Task :firebase_auth:generateDebugResValues UP-TO-DATE
+> Task :firebase_auth:generateDebugResources UP-TO-DATE
+> Task :firebase_auth:packageDebugResources UP-TO-DATE
+> Task :firebase_core:generateDebugResValues UP-TO-DATE
+> Task :firebase_core:generateDebugResources UP-TO-DATE
+> Task :firebase_core:packageDebugResources UP-TO-DATE
+> Task :firebase_storage:generateDebugResValues UP-TO-DATE
+> Task :firebase_storage:generateDebugResources UP-TO-DATE
+> Task :firebase_storage:packageDebugResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateDebugResValues UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateDebugResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:packageDebugResources UP-TO-DATE
+> Task :fluttertoast:generateDebugResValues UP-TO-DATE
+> Task :fluttertoast:generateDebugResources UP-TO-DATE
+> Task :fluttertoast:packageDebugResources UP-TO-DATE
+> Task :image_picker_android:generateDebugResValues UP-TO-DATE
+> Task :image_picker_android:generateDebugResources UP-TO-DATE
+> Task :image_picker_android:packageDebugResources UP-TO-DATE
+> Task :path_provider_android:generateDebugResValues UP-TO-DATE
+> Task :path_provider_android:generateDebugResources UP-TO-DATE
+> Task :path_provider_android:packageDebugResources UP-TO-DATE
+> Task :smart_auth:generateDebugResValues UP-TO-DATE
+> Task :smart_auth:generateDebugResources UP-TO-DATE
+> Task :smart_auth:packageDebugResources UP-TO-DATE
+> Task :upi_india:generateDebugResValues UP-TO-DATE
+> Task :upi_india:generateDebugResources UP-TO-DATE
+> Task :upi_india:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :cloud_firestore:extractDeepLinksDebug UP-TO-DATE
+> Task :cloud_firestore:processDebugManifest UP-TO-DATE
+> Task :firebase_auth:extractDeepLinksDebug UP-TO-DATE
+> Task :firebase_auth:processDebugManifest UP-TO-DATE
+> Task :firebase_core:extractDeepLinksDebug UP-TO-DATE
+> Task :firebase_core:processDebugManifest UP-TO-DATE
+> Task :firebase_storage:extractDeepLinksDebug UP-TO-DATE
+> Task :firebase_storage:processDebugManifest UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:extractDeepLinksDebug UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:processDebugManifest UP-TO-DATE
+> Task :fluttertoast:extractDeepLinksDebug UP-TO-DATE
+> Task :fluttertoast:processDebugManifest UP-TO-DATE
+> Task :image_picker_android:extractDeepLinksDebug UP-TO-DATE
+> Task :image_picker_android:processDebugManifest UP-TO-DATE
+> Task :path_provider_android:extractDeepLinksDebug UP-TO-DATE
+> Task :path_provider_android:processDebugManifest UP-TO-DATE
+> Task :smart_auth:extractDeepLinksDebug UP-TO-DATE
+> Task :smart_auth:processDebugManifest UP-TO-DATE
+> Task :upi_india:extractDeepLinksDebug UP-TO-DATE
+> Task :upi_india:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :cloud_firestore:compileDebugLibraryResources UP-TO-DATE
+> Task :cloud_firestore:parseDebugLocalResources UP-TO-DATE
+> Task :cloud_firestore:generateDebugRFile UP-TO-DATE
+> Task :firebase_auth:compileDebugLibraryResources UP-TO-DATE
+> Task :firebase_auth:parseDebugLocalResources UP-TO-DATE
+> Task :firebase_auth:generateDebugRFile UP-TO-DATE
+> Task :firebase_core:compileDebugLibraryResources UP-TO-DATE
+> Task :firebase_core:parseDebugLocalResources UP-TO-DATE
+> Task :firebase_core:generateDebugRFile UP-TO-DATE
+> Task :firebase_storage:compileDebugLibraryResources UP-TO-DATE
+> Task :firebase_storage:parseDebugLocalResources UP-TO-DATE
+> Task :firebase_storage:generateDebugRFile UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:compileDebugLibraryResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:parseDebugLocalResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateDebugRFile UP-TO-DATE
+> Task :fluttertoast:compileDebugLibraryResources UP-TO-DATE
+> Task :fluttertoast:parseDebugLocalResources UP-TO-DATE
+> Task :fluttertoast:generateDebugRFile UP-TO-DATE
+> Task :image_picker_android:compileDebugLibraryResources UP-TO-DATE
+> Task :image_picker_android:parseDebugLocalResources UP-TO-DATE
+> Task :image_picker_android:generateDebugRFile UP-TO-DATE
+> Task :path_provider_android:compileDebugLibraryResources UP-TO-DATE
+> Task :path_provider_android:parseDebugLocalResources UP-TO-DATE
+> Task :path_provider_android:generateDebugRFile UP-TO-DATE
+> Task :smart_auth:compileDebugLibraryResources UP-TO-DATE
+> Task :smart_auth:parseDebugLocalResources UP-TO-DATE
+> Task :smart_auth:generateDebugRFile UP-TO-DATE
+> Task :upi_india:compileDebugLibraryResources UP-TO-DATE
+> Task :upi_india:parseDebugLocalResources UP-TO-DATE
+> Task :upi_india:generateDebugRFile UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :cloud_firestore:generateDebugBuildConfig UP-TO-DATE
+> Task :cloud_firestore:javaPreCompileDebug UP-TO-DATE
+> Task :firebase_core:generateDebugBuildConfig UP-TO-DATE
+> Task :firebase_core:javaPreCompileDebug UP-TO-DATE
+> Task :firebase_core:compileDebugJavaWithJavac UP-TO-DATE
+> Task :firebase_core:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :cloud_firestore:compileDebugJavaWithJavac UP-TO-DATE
+> Task :cloud_firestore:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :firebase_auth:generateDebugBuildConfig UP-TO-DATE
+> Task :firebase_auth:javaPreCompileDebug UP-TO-DATE
+> Task :firebase_auth:compileDebugJavaWithJavac UP-TO-DATE
+> Task :firebase_auth:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :firebase_storage:generateDebugBuildConfig UP-TO-DATE
+> Task :firebase_storage:javaPreCompileDebug UP-TO-DATE
+> Task :firebase_storage:compileDebugJavaWithJavac UP-TO-DATE
+> Task :firebase_storage:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:javaPreCompileDebug UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:compileDebugJavaWithJavac UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :fluttertoast:compileDebugKotlin UP-TO-DATE
+> Task :fluttertoast:javaPreCompileDebug UP-TO-DATE
+> Task :fluttertoast:compileDebugJavaWithJavac NO-SOURCE
+> Task :fluttertoast:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :image_picker_android:javaPreCompileDebug UP-TO-DATE
+> Task :image_picker_android:compileDebugJavaWithJavac UP-TO-DATE
+> Task :image_picker_android:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :path_provider_android:javaPreCompileDebug UP-TO-DATE
+> Task :path_provider_android:compileDebugJavaWithJavac UP-TO-DATE
+> Task :path_provider_android:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :smart_auth:compileDebugKotlin UP-TO-DATE
+> Task :smart_auth:javaPreCompileDebug UP-TO-DATE
+> Task :smart_auth:compileDebugJavaWithJavac NO-SOURCE
+> Task :upi_india:javaPreCompileDebug UP-TO-DATE
+> Task :smart_auth:bundleLibCompileToJarDebug
+> Task :upi_india:compileDebugJavaWithJavac
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :upi_india:bundleLibCompileToJarDebug
+> Task :app:compressDebugAssets
+> Task :cloud_firestore:processDebugJavaRes NO-SOURCE
+> Task :firebase_auth:processDebugJavaRes NO-SOURCE
+> Task :firebase_core:processDebugJavaRes NO-SOURCE
+> Task :firebase_storage:processDebugJavaRes NO-SOURCE
+> Task :flutter_plugin_android_lifecycle:processDebugJavaRes NO-SOURCE
+> Task :fluttertoast:processDebugJavaRes
+> Task :image_picker_android:processDebugJavaRes NO-SOURCE
+> Task :path_provider_android:processDebugJavaRes NO-SOURCE
+> Task :smart_auth:processDebugJavaRes
+> Task :upi_india:processDebugJavaRes NO-SOURCE
+> Task :app:compileDebugKotlin
+> Task :app:checkDebugDuplicateClasses
+> Task :app:compileDebugJavaWithJavac
+> Task :app:processDebugJavaRes
+> Task :firebase_core:bundleLibRuntimeToJarDebug
+> Task :flutter_plugin_android_lifecycle:bundleLibRuntimeToJarDebug
+> Task :firebase_storage:bundleLibRuntimeToJarDebug
+> Task :image_picker_android:bundleLibRuntimeToJarDebug
+> Task :cloud_firestore:bundleLibRuntimeToJarDebug
+> Task :firebase_auth:bundleLibRuntimeToJarDebug
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeExtDexDebug
+> Task :app:preProfileBuild UP-TO-DATE
+> Task :fluttertoast:bundleLibRuntimeToJarDebug
+> Task :path_provider_android:bundleLibRuntimeToJarDebug
+> Task :upi_india:bundleLibRuntimeToJarDebug
+> Task :smart_auth:bundleLibRuntimeToJarDebug
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:dexBuilderDebug
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeLibDexDebug
+> Task :app:configureCMakeDebug[armeabi-v7a]
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:configureCMakeDebug[x86]
+> Task :app:buildCMakeDebug[x86]
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:mergeDebugJniLibFolders
+> Task :cloud_firestore:mergeDebugJniLibFolders
+> Task :cloud_firestore:mergeDebugNativeLibs NO-SOURCE
+> Task :cloud_firestore:copyDebugJniLibsProjectOnly
+> Task :firebase_auth:mergeDebugJniLibFolders
+> Task :firebase_auth:mergeDebugNativeLibs NO-SOURCE
+> Task :firebase_auth:copyDebugJniLibsProjectOnly
+> Task :firebase_core:mergeDebugJniLibFolders
+> Task :firebase_core:mergeDebugNativeLibs NO-SOURCE
+> Task :firebase_core:copyDebugJniLibsProjectOnly
+> Task :firebase_storage:mergeDebugJniLibFolders
+> Task :firebase_storage:mergeDebugNativeLibs NO-SOURCE
+> Task :firebase_storage:copyDebugJniLibsProjectOnly
+> Task :flutter_plugin_android_lifecycle:mergeDebugJniLibFolders
+> Task :flutter_plugin_android_lifecycle:mergeDebugNativeLibs NO-SOURCE
+> Task :flutter_plugin_android_lifecycle:copyDebugJniLibsProjectOnly
+> Task :fluttertoast:mergeDebugJniLibFolders
+> Task :fluttertoast:mergeDebugNativeLibs NO-SOURCE
+> Task :fluttertoast:copyDebugJniLibsProjectOnly
+> Task :image_picker_android:mergeDebugJniLibFolders
+> Task :image_picker_android:mergeDebugNativeLibs NO-SOURCE
+> Task :image_picker_android:copyDebugJniLibsProjectOnly
+> Task :path_provider_android:mergeDebugJniLibFolders
+> Task :path_provider_android:mergeDebugNativeLibs NO-SOURCE
+> Task :path_provider_android:copyDebugJniLibsProjectOnly
+> Task :smart_auth:mergeDebugJniLibFolders
+> Task :smart_auth:mergeDebugNativeLibs NO-SOURCE
+> Task :smart_auth:copyDebugJniLibsProjectOnly
+> Task :upi_india:mergeDebugJniLibFolders
+> Task :upi_india:mergeDebugNativeLibs NO-SOURCE
+> Task :upi_india:copyDebugJniLibsProjectOnly
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :cloud_firestore:stripDebugDebugSymbols NO-SOURCE
+> Task :cloud_firestore:copyDebugJniLibsProjectAndLocalJars
+> Task :app:mergeDebugNativeLibs
+> Task :cloud_firestore:extractDebugAnnotations
+> Task :cloud_firestore:extractDeepLinksForAarDebug
+> Task :cloud_firestore:mergeDebugGeneratedProguardFiles
+> Task :cloud_firestore:mergeDebugConsumerProguardFiles
+> Task :cloud_firestore:prepareDebugArtProfile
+> Task :cloud_firestore:prepareLintJarForPublish
+> Task :firebase_auth:stripDebugDebugSymbols NO-SOURCE
+> Task :cloud_firestore:mergeDebugJavaResource
+> Task :firebase_auth:copyDebugJniLibsProjectAndLocalJars
+> Task :cloud_firestore:syncDebugLibJars
+> Task :cloud_firestore:bundleDebugAar
+> Task :cloud_firestore:assembleDebug
+> Task :firebase_auth:extractDebugAnnotations
+> Task :firebase_auth:extractDeepLinksForAarDebug
+> Task :firebase_auth:mergeDebugGeneratedProguardFiles
+> Task :firebase_auth:mergeDebugConsumerProguardFiles
+> Task :firebase_auth:prepareDebugArtProfile
+> Task :firebase_auth:prepareLintJarForPublish
+> Task :firebase_core:stripDebugDebugSymbols NO-SOURCE
+> Task :firebase_auth:mergeDebugJavaResource
+> Task :firebase_core:copyDebugJniLibsProjectAndLocalJars
+> Task :firebase_auth:syncDebugLibJars
+> Task :firebase_auth:bundleDebugAar
+> Task :firebase_auth:assembleDebug
+> Task :firebase_core:extractDebugAnnotations
+> Task :firebase_core:extractDeepLinksForAarDebug
+> Task :firebase_core:mergeDebugGeneratedProguardFiles
+> Task :firebase_core:mergeDebugConsumerProguardFiles
+> Task :firebase_core:prepareDebugArtProfile
+> Task :firebase_core:prepareLintJarForPublish
+> Task :firebase_storage:stripDebugDebugSymbols NO-SOURCE
+> Task :firebase_core:mergeDebugJavaResource
+> Task :firebase_storage:copyDebugJniLibsProjectAndLocalJars
+> Task :firebase_core:syncDebugLibJars
+> Task :firebase_core:bundleDebugAar
+> Task :firebase_core:assembleDebug
+> Task :firebase_storage:extractDebugAnnotations
+> Task :firebase_storage:extractDeepLinksForAarDebug
+> Task :firebase_storage:mergeDebugGeneratedProguardFiles
+> Task :firebase_storage:mergeDebugConsumerProguardFiles
+> Task :firebase_storage:prepareDebugArtProfile
+> Task :firebase_storage:prepareLintJarForPublish
+> Task :flutter_plugin_android_lifecycle:stripDebugDebugSymbols NO-SOURCE
+> Task :firebase_storage:mergeDebugJavaResource
+> Task :flutter_plugin_android_lifecycle:copyDebugJniLibsProjectAndLocalJars
+> Task :app:stripDebugDebugSymbols
+> Task :firebase_storage:syncDebugLibJars
+> Task :firebase_storage:bundleDebugAar
+> Task :firebase_storage:assembleDebug
+> Task :flutter_plugin_android_lifecycle:extractDebugAnnotations
+> Task :flutter_plugin_android_lifecycle:extractDeepLinksForAarDebug
+> Task :flutter_plugin_android_lifecycle:mergeDebugGeneratedProguardFiles
+> Task :flutter_plugin_android_lifecycle:mergeDebugConsumerProguardFiles
+> Task :flutter_plugin_android_lifecycle:prepareDebugArtProfile
+> Task :flutter_plugin_android_lifecycle:prepareLintJarForPublish
+> Task :fluttertoast:stripDebugDebugSymbols NO-SOURCE
+> Task :flutter_plugin_android_lifecycle:mergeDebugJavaResource
+> Task :fluttertoast:copyDebugJniLibsProjectAndLocalJars
+> Task :flutter_plugin_android_lifecycle:syncDebugLibJars
+> Task :flutter_plugin_android_lifecycle:bundleDebugAar
+> Task :flutter_plugin_android_lifecycle:assembleDebug
+> Task :fluttertoast:extractDebugAnnotations
+> Task :fluttertoast:extractDeepLinksForAarDebug
+> Task :fluttertoast:mergeDebugGeneratedProguardFiles
+> Task :fluttertoast:mergeDebugConsumerProguardFiles
+> Task :fluttertoast:prepareDebugArtProfile
+> Task :fluttertoast:prepareLintJarForPublish
+> Task :image_picker_android:stripDebugDebugSymbols NO-SOURCE
+> Task :image_picker_android:copyDebugJniLibsProjectAndLocalJars
+> Task :fluttertoast:mergeDebugJavaResource
+> Task :image_picker_android:extractDebugAnnotations
+> Task :fluttertoast:syncDebugLibJars
+> Task :fluttertoast:bundleDebugAar
+> Task :fluttertoast:assembleDebug
+> Task :image_picker_android:extractDeepLinksForAarDebug
+> Task :image_picker_android:mergeDebugGeneratedProguardFiles
+> Task :image_picker_android:mergeDebugConsumerProguardFiles
+> Task :image_picker_android:prepareDebugArtProfile
+> Task :image_picker_android:prepareLintJarForPublish
+> Task :path_provider_android:stripDebugDebugSymbols NO-SOURCE
+> Task :image_picker_android:mergeDebugJavaResource
+> Task :path_provider_android:copyDebugJniLibsProjectAndLocalJars
+> Task :image_picker_android:syncDebugLibJars
+> Task :image_picker_android:bundleDebugAar
+> Task :image_picker_android:assembleDebug
+> Task :path_provider_android:extractDebugAnnotations
+> Task :path_provider_android:extractDeepLinksForAarDebug
+> Task :path_provider_android:mergeDebugGeneratedProguardFiles
+> Task :path_provider_android:mergeDebugConsumerProguardFiles
+> Task :path_provider_android:prepareDebugArtProfile
+> Task :path_provider_android:prepareLintJarForPublish
+> Task :smart_auth:stripDebugDebugSymbols NO-SOURCE
+> Task :path_provider_android:mergeDebugJavaResource
+> Task :smart_auth:copyDebugJniLibsProjectAndLocalJars
+> Task :path_provider_android:syncDebugLibJars
+> Task :path_provider_android:bundleDebugAar
+> Task :path_provider_android:assembleDebug
+> Task :smart_auth:extractDebugAnnotations
+> Task :smart_auth:extractDeepLinksForAarDebug
+> Task :smart_auth:mergeDebugGeneratedProguardFiles
+> Task :smart_auth:mergeDebugConsumerProguardFiles
+> Task :smart_auth:prepareDebugArtProfile
+> Task :smart_auth:prepareLintJarForPublish
+> Task :upi_india:stripDebugDebugSymbols NO-SOURCE
+> Task :upi_india:copyDebugJniLibsProjectAndLocalJars
+> Task :smart_auth:mergeDebugJavaResource
+> Task :upi_india:extractDebugAnnotations
+> Task :smart_auth:syncDebugLibJars
+> Task :smart_auth:bundleDebugAar
+> Task :smart_auth:assembleDebug
+> Task :upi_india:extractDeepLinksForAarDebug
+> Task :upi_india:mergeDebugGeneratedProguardFiles
+> Task :upi_india:mergeDebugConsumerProguardFiles
+> Task :upi_india:prepareDebugArtProfile
+> Task :upi_india:prepareLintJarForPublish
+> Task :upi_india:mergeDebugJavaResource
+> Task :upi_india:syncDebugLibJars
+> Task :upi_india:bundleDebugAar
+> Task :upi_india:assembleDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 43s
+330 actionable tasks: 167 executed, 163 up-to-date

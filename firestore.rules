@@ -1,0 +1,53 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if the user is an admin
+    // TODO: Replace 'admin@gmail.com' with your actual admin email address
+    function isAdmin() {
+       return request.auth != null && request.auth.token.email == 'admin@gmail.com';
+    }
+
+    // Helper function to check if the user is the owner of the document
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    // Users collection
+    match /users/{userId} {
+      // User can read/write their own profile, Admin can access all
+      allow read, write: if isOwner(userId) || isAdmin();
+
+      // Messages subcollection
+      match /messages/{messageId} {
+        // User can read/write their own messages, Admin can access all
+        allow read, write: if isOwner(userId) || isAdmin();
+      }
+    }
+    
+    // Public/Admin collections
+    
+    // Courses: Public read, Admin write
+    match /courses/{courseId} {
+      allow read: if true; // Or restrict to authenticated users
+      allow write: if isAdmin();
+    }
+
+    // Instructors: Public read, Admin write
+    match /instructors/{instructorId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    
+    // Announcements: Public read, Admin write (assuming 'announcements' collection)
+    match /announcements/{announcementId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if isAdmin(); // Fallback for Admin
+    }
+  }
+}

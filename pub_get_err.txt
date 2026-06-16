@@ -1,0 +1,12 @@
+Resolving dependencies...
+Note: intl is pinned to version 0.19.0 by flutter_localizations from the flutter SDK.
+See https://dart.dev/go/sdk-version-pinning for details.
+
+
+Because driving_school depends on flutter_localizations from sdk which depends on intl 0.19.0, intl 0.19.0 is required.
+So, because driving_school depends on intl ^0.20.2, version solving failed.
+
+
+You can try the following suggestion to make the pubspec resolve:
+* Consider downgrading your constraint on intl: flutter pub add intl:^0.19.0
+Failed to update packages.

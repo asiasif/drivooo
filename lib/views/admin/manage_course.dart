@@ -6,7 +6,9 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:provider/provider.dart';
 
 class ManageCourse extends StatelessWidget {
-  const ManageCourse({super.key});
+  final bool isReadOnly;
+
+  const ManageCourse({super.key, this.isReadOnly = false});
 
   @override
   Widget build(BuildContext context) {
@@ -127,6 +129,74 @@ class ManageCourse extends StatelessWidget {
                                                         scale: 0.9,
                                                       ),
                                                     ),
+                                                    if (!isReadOnly)
+                                                      Positioned(
+                                                        top: 0,
+                                                        right: 0,
+                                                        child: PopupMenuButton(
+                                                          icon: const Icon(
+                                                            Icons.more_vert,
+                                                            color: Colors.white,
+                                                          ),
+                                                          itemBuilder: (context) => [
+                                                            PopupMenuItem(
+                                                              onTap: () {
+                                                                Navigator.of(context)
+                                                                    .push(
+                                                                  MaterialPageRoute(
+                                                                    builder: (context) =>
+                                                                        AddCourse(
+                                                                      course: adminCourseController
+                                                                              .coursesList[
+                                                                          index],
+                                                                    ),
+                                                                  ),
+                                                                );
+                                                              },
+                                                              child: const Text('Edit'),
+                                                            ),
+                                                            PopupMenuItem(
+                                                              onTap: () {
+                                                                showDialog(
+                                                                  context: context,
+                                                                  builder: (context) {
+                                                                    return AlertDialog(
+                                                                      title: const Text(
+                                                                          'Delete Course'),
+                                                                      content: const Text(
+                                                                          'Are you sure you want to delete this course?'),
+                                                                      actions: [
+                                                                        TextButton(
+                                                                          onPressed: () {
+                                                                            Navigator.of(context)
+                                                                                .pop();
+                                                                          },
+                                                                          child: const Text('Cancel'),
+                                                                        ),
+                                                                        TextButton(
+                                                                          onPressed: () {
+                                                                            adminCourseController
+                                                                                .deleteCourse(
+                                                                                    adminCourseController
+                                                                                        .coursesList[index]
+                                                                                        .courseID,
+                                                                                    context);
+                                                                            Navigator.of(context)
+                                                                                .pop();
+                                                                          },
+                                                                          child: const Text('Delete'),
+                                                                        ),
+                                                                      ],
+                                                                    );
+                                                                  },
+                                                                );
+                                                              },
+                                                              child: const Text(
+                                                                  'Delete'),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
                                                     ////////////////////////////////////////////
                                                     Padding(
                                                       padding:
@@ -193,7 +263,7 @@ class ManageCourse extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: isReadOnly ? null : FloatingActionButton(
         backgroundColor: Colors.black,
         onPressed: () {
           Navigator.of(context).push(

@@ -2,6 +2,7 @@ import 'package:driving_school/controller/user_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:driving_school/services/pdf_invoice_service.dart';
 import 'package:provider/provider.dart';
 
 class Invoice extends StatelessWidget {
@@ -162,8 +163,23 @@ class Invoice extends StatelessWidget {
                                                       ),
                                                     ],
                                                   ),
-                                                  trailing: Image.asset(
-                                                      'assets/invoice_tail.png'),
+                                                  trailing: InkWell(
+                                                    onTap: () async {
+                                                      ScaffoldMessenger.of(context).showSnackBar(
+                                                        const SnackBar(content: Text('Generating PDF...')),
+                                                      );
+                                                      try {
+                                                        final invoice = userInvoiceController.invoiceList[index];
+                                                        await PdfInvoiceService.generate(invoice);
+                                                      } catch (e) {
+                                                        ScaffoldMessenger.of(context).showSnackBar(
+                                                          SnackBar(content: Text('Error generating PDF: $e')),
+                                                        );
+                                                      }
+                                                    },
+                                                    child: Image.asset(
+                                                        'assets/invoice_tail.png'),
+                                                  ),
                                                 ),
                                               ),
                                             );

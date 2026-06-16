@@ -1,0 +1,12 @@
+Analyzing otp_verification.dart...                              
+
+warning - Unused import: 'package:firebase_auth/firebase_auth.dart' - lib\views\otp_verification.dart:5:8 - unused_import
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\otp_verification.dart:148:40 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\otp_verification.dart:156:43 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:173:56 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:183:56 - use_build_context_synchronously
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\otp_verification.dart:211:40 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\otp_verification.dart:218:43 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\otp_verification.dart:220:43 - deprecated_member_use
+
+8 issues found. (ran in 5.1s)

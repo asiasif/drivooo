@@ -1,0 +1,441 @@
+Analyzing driving_school_project...                             
+
+warning - Unused import: 'dart:io' - lib\controller\admin_controller.dart:3:8 - unused_import
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:49:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:81:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:179:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\admin_controller.dart:189:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\admin_controller.dart:196:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:254:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:331:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:364:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:462:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:484:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:488:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:531:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:538:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:622:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:690:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:691:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:704:5 - avoid_print
+   info - Function literals shouldn't be passed to 'forEach' - lib\controller\admin_controller.dart:726:28 - avoid_function_literals_in_foreach_calls
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:736:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:739:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:742:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:826:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:859:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:887:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:905:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:924:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:951:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:979:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:997:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:1010:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:1042:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:1088:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:1128:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\admin_controller.dart:1145:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\admin_controller.dart:1150:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\admin_controller.dart:1151:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\mock_test_controller.dart:400:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\mock_test_controller.dart:436:9 - avoid_print
+   info - Unnecessary braces in a string interpolation - lib\controller\mock_test_controller.dart:436:87 - unnecessary_brace_in_string_interps
+   info - Don't invoke 'print' in production code - lib\controller\mock_test_controller.dart:440:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\mock_test_controller.dart:560:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\mock_test_controller.dart:562:7 - avoid_print
+warning - Unused import: 'package:driving_school/views/user/payment_successfull.dart' - lib\controller\payment_gateway.dart:1:8 - unused_import
+   info - The private field _upiIndia could be 'final' - lib\controller\payment_gateway.dart:7:12 - prefer_final_fields
+   info - Don't use 'BuildContext's across async gaps - lib\controller\payment_gateway.dart:67:45 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\payment_gateway.dart:71:43 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:303:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:307:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:322:9 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:410:23 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:428:23 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:431:24 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:437:25 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:445:21 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:446:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:452:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:474:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:531:21 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:532:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:604:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:638:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:689:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:705:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:709:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:776:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:790:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:792:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:812:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:820:7 - avoid_print
+  error - Undefined class 'RatingModel' - lib\controller\user_controller.dart:823:26 - undefined_class
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:826:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:833:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:839:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:895:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:905:30 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:928:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:934:8 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:935:29 - use_build_context_synchronously
+  error - The method 'BookingModel' isn't defined for the type 'UserController' - lib\controller\user_controller.dart:960:23 - undefined_method
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1022:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1032:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1055:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1078:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1080:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1087:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1094:14 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1099:16 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1103:19 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1107:16 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1115:18 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1119:16 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1123:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1126:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1130:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1166:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1171:20 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1178:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1179:28 - use_build_context_synchronously
+   info - Unnecessary braces in a string interpolation - lib\controller\user_controller.dart:1208:63 - unnecessary_brace_in_string_interps
+   info - Unnecessary braces in a string interpolation - lib\controller\user_controller.dart:1211:82 - unnecessary_brace_in_string_interps
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1236:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1242:21 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1247:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1248:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1270:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1287:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1292:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1296:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1325:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1349:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1378:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1399:28 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\controller\user_controller.dart:1404:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\controller\user_controller.dart:1405:28 - use_build_context_synchronously
+warning - Unused import: 'dart:io' - lib\services\certificate_service.dart:1:8 - unused_import
+warning - Unused import: 'package:flutter/services.dart' - lib\services\certificate_service.dart:2:8 - unused_import
+warning - Unused import: 'package:intl/intl.dart' - lib\services\certificate_service.dart:6:8 - unused_import
+warning - Unused import: 'dart:io' - lib\services\cloudinary_service.dart:1:8 - unused_import
+   info - Don't invoke 'print' in production code - lib\services\cloudinary_service.dart:16:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\cloudinary_service.dart:19:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\document_scanner_service.dart:26:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\document_scanner_service.dart:30:7 - avoid_print
+   info - Invalid regular expression syntax - lib\services\document_scanner_service.dart:57:46 - valid_regexps
+warning - Unused import: 'file_handle_stub.dart' - lib\services\file_handle\file_handle_api.dart:1:8 - unused_import
+   info - 'dart:html' is deprecated and shouldn't be used. Use package:web and dart:js_interop instead - lib\services\file_handle\file_handle_web.dart:1:1 - deprecated_member_use
+   info - Don't use web-only libraries outside Flutter web plugins - lib\services\file_handle\file_handle_web.dart:1:1 - avoid_web_libraries_in_flutter
+warning - The value of the local variable 'anchor' isn't used - lib\services\file_handle\file_handle_web.dart:11:11 - unused_local_variable
+   info - 'Table.fromTextArray' is deprecated and shouldn't be used. Use TableHelper.fromTextArray() instead - lib\services\pdf_attendance_service.dart:82:15 - deprecated_member_use
+   info - 'Table.fromTextArray' is deprecated and shouldn't be used. Use TableHelper.fromTextArray() instead - lib\services\pdf_booking_service.dart:84:15 - deprecated_member_use
+   info - 'Table.fromTextArray' is deprecated and shouldn't be used. Use TableHelper.fromTextArray() instead - lib\services\pdf_invoice_service.dart:92:15 - deprecated_member_use
+   info - Unnecessary use of string interpolation - lib\services\pdf_invoice_service.dart:97:21 - unnecessary_string_interpolations
+   info - Unnecessary use of string interpolation - lib\services\pdf_invoice_service.dart:123:33 - unnecessary_string_interpolations
+   info - 'Table.fromTextArray' is deprecated and shouldn't be used. Use TableHelper.fromTextArray() instead - lib\services\pdf_retest_service.dart:93:15 - deprecated_member_use
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\add_contact.dart:119:29 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\add_contact.dart:125:35 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\add_contact.dart:137:57 - use_build_context_synchronously
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\add_course.dart:165:29 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\add_course.dart:171:35 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\add_course.dart:185:63 - use_build_context_synchronously
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\add_instructor.dart:214:29 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\add_instructor.dart:220:35 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\add_instructor.dart:246:56 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\views\admin\add_instructor.dart:258:29 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\admin_chat_list.dart:98:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\admin_chat_screen.dart:109:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\admin_chat_screen.dart:159:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\admin_chat_screen.dart:186:50 - deprecated_member_use
+warning - Unused import: 'package:driving_school/views/admin/admin_chat_list.dart' - lib\views\admin\admin_home.dart:9:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\admin_home.dart:85:61 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\admin_home.dart:129:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\admin_home.dart:199:58 - deprecated_member_use
+warning - Unused import: 'package:driving_school/controller/user_controller.dart' - lib\views\admin\admin_login.dart:3:8 - unused_import
+warning - Unused import: 'package:driving_school/views/admin/admin_home.dart' - lib\views\admin\admin_login.dart:4:8 - unused_import
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\admin_login.dart:122:40 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\admin\admin_login.dart:130:43 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\analytics_screen.dart:151:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\analytics_screen.dart:163:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\analytics_screen.dart:273:36 - deprecated_member_use
+warning - Unused import: 'package:driving_school/controller/user_controller.dart' - lib\views\admin\attendance_marking.dart:2:8 - unused_import
+warning - Unused import: 'package:driving_school/views/admin/add_course.dart' - lib\views\admin\attendance_marking.dart:3:8 - unused_import
+warning - The value of the local variable 'userAttID' isn't used - lib\views\admin\attendance_marking.dart:113:36 - unused_local_variable
+warning - Unused import: 'package:iconsax/iconsax.dart' - lib\views\admin\manage_announcements.dart:4:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_announcements.dart:67:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_announcements.dart:205:52 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_announcements.dart:216:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_contact.dart:88:72 - deprecated_member_use
+warning - Unused import: 'package:driving_school/controller/user_controller.dart' - lib\views\admin\manage_instructor.dart:2:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_instructor.dart:115:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_instructor.dart:134:102 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_instructor.dart:134:132 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_instructor.dart:161:83 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_instructor.dart:161:113 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_instructor.dart:193:76 - deprecated_member_use
+   info - Unnecessary use of string interpolation - lib\views\admin\manage_instructor.dart:222:78 - unnecessary_string_interpolations
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_instructor.dart:270:77 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\manage_instructor.dart:307:53 - use_build_context_synchronously
+   info - Don't invoke 'print' in production code - lib\views\admin\manage_rc.dart:142:27 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_rc.dart:198:93 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_rc.dart:198:125 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\manage_rc.dart:243:66 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\manage_rc.dart:262:66 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\manage_slot.dart:84:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\test_management.dart:197:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\test_management.dart:217:67 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\test_management.dart:241:64 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\test_management.dart:243:83 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\test_management.dart:254:91 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\test_management.dart:256:113 - deprecated_member_use
+warning - Unused import: 'package:driving_school/controller/user_controller.dart' - lib\views\admin\user_attedance.dart:2:8 - unused_import
+warning - Unused import: 'package:driving_school/views/admin/add_course.dart' - lib\views\admin\user_attedance.dart:3:8 - unused_import
+warning - Unused import: 'package:table_calendar/table_calendar.dart' - lib\views\admin\user_attedance.dart:8:8 - unused_import
+warning - Unused import: 'package:driving_school/controller/user_controller.dart' - lib\views\admin\users_list.dart:3:8 - unused_import
+warning - Unused import: 'package:driving_school/views/admin/attendance_marking.dart' - lib\views\admin\users_list.dart:4:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\views\admin\users_list.dart:216:67 - use_build_context_synchronously
+warning - Unused import: 'package:lottie/lottie.dart' - lib\views\admin\view_bookings.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\view_bookings.dart:139:62 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\view_bookings.dart:168:68 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\view_bookings.dart:206:68 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\admin\view_bookings.dart:214:67 - deprecated_member_use
+warning - Unused import: 'package:driving_school/const.dart' - lib\views\choose_user.dart:1:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:92:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:119:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:125:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:148:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:217:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:218:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:223:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:226:35 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:231:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:243:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\choose_user.dart:247:40 - deprecated_member_use
+warning - Unused import: 'package:driving_school/const.dart' - lib\views\otp_verification.dart:2:8 - unused_import
+warning - Unused import: 'package:firebase_auth/firebase_auth.dart' - lib\views\otp_verification.dart:6:8 - unused_import
+warning - Duplicate import - lib\views\otp_verification.dart:10:8 - duplicate_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:122:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:150:45 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:156:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:183:73 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:187:80 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:213:85 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:221:85 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:254:65 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:259:86 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:295:80 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:323:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:325:82 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:335:88 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:362:70 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:369:70 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:393:70 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:400:70 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\otp_verification.dart:425:72 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:461:66 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\otp_verification.dart:468:66 - use_build_context_synchronously
+warning - The value of the local variable 'adminController' isn't used - lib\views\splash_screen.dart:27:11 - unused_local_variable
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\add_user_details.dart:82:52 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\add_user_details.dart:87:56 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\add_user_details.dart:89:56 - use_build_context_synchronously
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\user\add_user_details.dart:195:29 - deprecated_member_use
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\user\add_user_details.dart:201:35 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\add_user_details.dart:225:40 - use_build_context_synchronously
+warning - Unused import: 'package:driving_school/controller/user_controller.dart' - lib\views\user\apply_rc_renewal.dart:4:8 - unused_import
+warning - Unused import: 'package:provider/provider.dart' - lib\views\user\apply_rc_renewal.dart:10:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\apply_rc_renewal.dart:227:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\apply_rc_renewal.dart:488:33 - deprecated_member_use
+warning - Unused import: 'package:driving_school/controller/user_controller.dart' - lib\views\user\apply_retest.dart:2:8 - unused_import
+warning - Unused import: 'package:driving_school/views/user/payment_successfull.dart' - lib\views\user\apply_retest.dart:3:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\apply_retest.dart:133:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\apply_retest.dart:161:57 - deprecated_member_use
+   info - Statements in an if should be enclosed in a block - lib\views\user\apply_retest.dart:214:43 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\views\user\apply_retest.dart:216:43 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\views\user\apply_retest.dart:218:43 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\views\user\apply_retest.dart:220:43 - curly_braces_in_flow_control_structures
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\apply_retest.dart:265:27 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\choose_payment.dart:109:62 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\choose_payment.dart:117:54 - use_build_context_synchronously
+warning - The value of the local variable 'adminCourseController' isn't used - lib\views\user\courses.dart:16:11 - unused_local_variable
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\history.dart:203:76 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\invoice.dart:175:78 - use_build_context_synchronously
+warning - Unused import: 'package:icons_plus/icons_plus.dart' - lib\views\user\leaderboard_screen.dart:5:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\leaderboard_screen.dart:126:49 - deprecated_member_use
+warning - The value of the local variable 'isWrong' isn't used - lib\views\user\mock_test_screen.dart:138:29 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\mock_test_screen.dart:147:59 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\mock_test_screen.dart:150:57 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\my_applications.dart:136:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\my_applications.dart:138:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\my_applications.dart:208:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\my_applications.dart:210:72 - deprecated_member_use
+warning - Unused import: 'package:driving_school/const.dart' - lib\views\user\payment_successfull.dart:2:8 - unused_import
+warning - Unused import: 'package:driving_school/widgets/table_widget.dart' - lib\views\user\payment_successfull.dart:4:8 - unused_import
+warning - Unused import: 'package:google_fonts/google_fonts.dart' - lib\views\user\payment_successfull.dart:7:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\payment_successfull.dart:77:52 - deprecated_member_use
+warning - Unused import: 'package:driving_school/views/user/payment_successfull.dart' - lib\views\user\retest_payment_screen.dart:3:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\select_instructor.dart:104:70 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\select_instructor.dart:157:72 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\select_instructor.dart:158:70 - deprecated_member_use
+warning - Unused import: 'package:driving_school/models/booking_model.dart' - lib\views\user\slot_booking.dart:3:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\views\user\slot_booking.dart:92:51 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\slot_booking.dart:104:46 - deprecated_member_use
+warning - The value of the local variable 'statusText' isn't used - lib\views\user\slot_booking.dart:316:34 - unused_local_variable
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\slot_booking.dart:379:58 - deprecated_member_use
+   info - Unnecessary use of string interpolation - lib\views\user\slot_booking.dart:389:37 - unnecessary_string_interpolations
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\slot_booking.dart:399:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\slot_booking.dart:407:58 - deprecated_member_use
+warning - The '!' will have no effect because the receiver can't be null - lib\views\user\slot_booking.dart:427:54 - unnecessary_non_null_assertion
+warning - Unused import: 'package:driving_school/services/certificate_service.dart' - lib\views\user\user_home.dart:3:8 - unused_import
+warning - Unused import: 'package:driving_school/views/user/user_settings.dart' - lib\views\user\user_home.dart:5:8 - unused_import
+warning - Unused import: 'package:intl/intl.dart' - lib\views\user\user_home.dart:9:8 - unused_import
+   info - Don't invoke 'print' in production code - lib\views\user\user_home.dart:39:5 - avoid_print
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\user_home.dart:99:75 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\user_home.dart:109:66 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\user_home.dart:176:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\user_home.dart:191:61 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\user_home.dart:203:61 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\user_home.dart:217:65 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\views\user\user_profile.dart:27:13 - avoid_print
+   info - Don't invoke 'print' in production code - lib\views\user\user_profile.dart:28:13 - avoid_print
+   info - Don't invoke 'print' in production code - lib\views\user\user_profile.dart:38:17 - avoid_print
+warning - Unused import: 'package:driving_school/views/choose_user.dart' - lib\views\user\user_settings.dart:3:8 - unused_import
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\user\user_settings.dart:79:37 - deprecated_member_use
+   info - Use interpolation to compose strings and values - lib\views\user\user_settings.dart:123:34 - prefer_interpolation_to_compose_strings
+   info - Use interpolation to compose strings and values - lib\views\user\user_settings.dart:138:31 - prefer_interpolation_to_compose_strings
+   info - 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\views\user\user_settings.dart:179:33 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\view_book.dart:61:65 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\view_book.dart:61:96 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\view_book.dart:110:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\widgets\dashboard_grid_widget.dart:93:44 - deprecated_member_use
+   info - 'swapAnimationDuration' is deprecated and shouldn't be used. Please use [duration] instead - lib\views\user\widgets\skill_radar_chart.dart:67:13 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\widgets\skill_radar_chart.dart:106:32 - deprecated_member_use
+  error - The named parameter 'itemRadius' isn't defined - lib\views\user\widgets\skill_radar_chart.dart:108:9 - undefined_named_parameter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\views\user\widgets\skill_radar_chart.dart:121:34 - deprecated_member_use
+  error - The named parameter 'itemRadius' isn't defined - lib\views\user\widgets\skill_radar_chart.dart:122:9 - undefined_named_parameter
+   info - Parameter 'key' could be a super parameter - lib\widgets\language_switcher.dart:6:9 - use_super_parameters
+  error - Target of URI doesn't exist: 'package:flutter/material.dart' - packages\upi_india\example\lib\main.dart:1:8 - uri_does_not_exist
+  error - The function 'runApp' isn't defined - packages\upi_india\example\lib\main.dart:4:16 - undefined_function
+  error - Classes can only extend other classes - packages\upi_india\example\lib\main.dart:6:21 - extends_non_class
+  error - Undefined class 'Widget' - packages\upi_india\example\lib\main.dart:8:3 - undefined_class
+warning - The method doesn't override an inherited method - packages\upi_india\example\lib\main.dart:8:10 - override_on_non_overriding_member
+  error - Undefined class 'BuildContext' - packages\upi_india\example\lib\main.dart:8:16 - undefined_class
+  error - The method 'MaterialApp' isn't defined for the type 'MyApp' - packages\upi_india\example\lib\main.dart:9:12 - undefined_method
+  error - Classes can only extend other classes - packages\upi_india\example\lib\main.dart:16:24 - extends_non_class
+   info - Invalid use of a private type in a public API - packages\upi_india\example\lib\main.dart:18:3 - library_private_types_in_public_api
+warning - The method doesn't override an inherited method - packages\upi_india\example\lib\main.dart:18:18 - override_on_non_overriding_member
+  error - Classes can only extend other classes - packages\upi_india\example\lib\main.dart:21:30 - extends_non_class
+   info - The private field _upiIndia could be 'final' - packages\upi_india\example\lib\main.dart:23:12 - prefer_final_fields
+  error - Undefined class 'TextStyle' - packages\upi_india\example\lib\main.dart:26:3 - undefined_class
+  error - The method 'TextStyle' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:26:22 - undefined_method
+  error - Undefined name 'FontWeight' - packages\upi_india\example\lib\main.dart:28:17 - undefined_identifier
+  error - Undefined class 'TextStyle' - packages\upi_india\example\lib\main.dart:31:3 - undefined_class
+  error - The method 'TextStyle' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:31:21 - undefined_method
+  error - Undefined name 'FontWeight' - packages\upi_india\example\lib\main.dart:32:17 - undefined_identifier
+warning - The method doesn't override an inherited method - packages\upi_india\example\lib\main.dart:37:8 - override_on_non_overriding_member
+  error - The method 'setState' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:39:7 - undefined_method
+  error - The method 'initState' isn't defined in a superclass of '_HomePageState' - packages\upi_india\example\lib\main.dart:45:11 - undefined_super_member
+  error - Undefined class 'Widget' - packages\upi_india\example\lib\main.dart:59:3 - undefined_class
+   info - Statements in an if should be enclosed in a block - packages\upi_india\example\lib\main.dart:61:7 - curly_braces_in_flow_control_structures
+  error - The method 'Center' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:61:14 - undefined_method
+  error - The method 'CircularProgressIndicator' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:61:28 - undefined_method
+   info - Use 'isEmpty' instead of 'length' to test whether the collection is empty - packages\upi_india\example\lib\main.dart:62:14 - prefer_is_empty
+   info - Statements in an if should be enclosed in a block - packages\upi_india\example\lib\main.dart:63:7 - curly_braces_in_flow_control_structures
+  error - The method 'Center' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:63:14 - undefined_method
+  error - The method 'Text' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:64:16 - undefined_method
+   info - Statements in an if should be enclosed in a block - packages\upi_india\example\lib\main.dart:70:7 - curly_braces_in_flow_control_structures
+  error - The method 'Align' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:70:14 - undefined_method
+  error - Undefined name 'Alignment' - packages\upi_india\example\lib\main.dart:71:20 - undefined_identifier
+  error - The method 'SingleChildScrollView' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:72:16 - undefined_method
+  error - The method 'BouncingScrollPhysics' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:73:20 - undefined_method
+  error - The method 'Wrap' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:74:18 - undefined_method
+  error - The name 'Widget' isn't a type, so it can't be used as a type argument - packages\upi_india\example\lib\main.dart:75:33 - non_type_as_type_argument
+  error - The method 'GestureDetector' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:76:22 - undefined_method
+  error - The method 'setState' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:79:19 - undefined_method
+  error - The method 'Container' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:81:24 - undefined_method
+  error - The method 'Column' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:84:26 - undefined_method
+  error - Undefined name 'MainAxisSize' - packages\upi_india\example\lib\main.dart:85:35 - undefined_identifier
+  error - Undefined name 'MainAxisAlignment' - packages\upi_india\example\lib\main.dart:86:40 - undefined_identifier
+  error - The name 'Widget' isn't a type, so it can't be used as a type argument - packages\upi_india\example\lib\main.dart:87:32 - non_type_as_type_argument
+  error - Undefined name 'Image' - packages\upi_india\example\lib\main.dart:88:23 - undefined_identifier
+  error - The method 'Text' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:93:23 - undefined_method
+   info - Don't invoke 'print' in production code - packages\upi_india\example\lib\main.dart:122:9 - avoid_print
+   info - Don't invoke 'print' in production code - packages\upi_india\example\lib\main.dart:125:9 - avoid_print
+   info - Don't invoke 'print' in production code - packages\upi_india\example\lib\main.dart:128:9 - avoid_print
+   info - Don't invoke 'print' in production code - packages\upi_india\example\lib\main.dart:131:9 - avoid_print
+  error - Undefined class 'Widget' - packages\upi_india\example\lib\main.dart:135:3 - undefined_class
+  error - The method 'Padding' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:136:12 - undefined_method
+  error - The name 'all' isn't a class - packages\upi_india\example\lib\main.dart:137:22 - creation_with_non_type
+  error - The method 'Row' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:138:14 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - packages\upi_india\example\lib\main.dart:139:28 - undefined_identifier
+  error - The method 'Text' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:141:11 - undefined_method
+  error - The method 'Flexible' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:142:11 - undefined_method
+  error - The method 'Text' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:143:22 - undefined_method
+  error - Undefined class 'Widget' - packages\upi_india\example\lib\main.dart:153:3 - undefined_class
+warning - The method doesn't override an inherited method - packages\upi_india\example\lib\main.dart:153:10 - override_on_non_overriding_member
+  error - Undefined class 'BuildContext' - packages\upi_india\example\lib\main.dart:153:16 - undefined_class
+  error - The method 'Scaffold' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:154:12 - undefined_method
+  error - The method 'AppBar' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:155:15 - undefined_method
+  error - The method 'Text' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:156:16 - undefined_method
+  error - The method 'Column' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:158:13 - undefined_method
+  error - The name 'Widget' isn't a type, so it can't be used as a type argument - packages\upi_india\example\lib\main.dart:159:20 - non_type_as_type_argument
+  error - The method 'Expanded' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:160:11 - undefined_method
+  error - The method 'Expanded' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:163:11 - undefined_method
+  error - The method 'FutureBuilder' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:164:20 - undefined_method
+  error - Undefined class 'BuildContext' - packages\upi_india\example\lib\main.dart:166:25 - undefined_class
+  error - Undefined class 'AsyncSnapshot' - packages\upi_india\example\lib\main.dart:166:47 - undefined_class
+  error - Undefined name 'ConnectionState' - packages\upi_india\example\lib\main.dart:167:49 - undefined_identifier
+  error - The method 'Center' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:169:28 - undefined_method
+  error - The method 'Text' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:170:30 - undefined_method
+   info - The local variable '_upiResponse' starts with an underscore - packages\upi_india\example\lib\main.dart:179:31 - no_leading_underscores_for_local_identifiers
+  error - The method 'Padding' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:189:26 - undefined_method
+  error - The name 'all' isn't a class - packages\upi_india\example\lib\main.dart:190:36 - creation_with_non_type
+  error - The method 'Column' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:191:28 - undefined_method
+  error - Undefined name 'MainAxisAlignment' - packages\upi_india\example\lib\main.dart:192:42 - undefined_identifier
+  error - The name 'Widget' isn't a type, so it can't be used as a type argument - packages\upi_india\example\lib\main.dart:193:34 - non_type_as_type_argument
+   info - Statements in an if should be enclosed in a block - packages\upi_india\example\lib\main.dart:203:19 - curly_braces_in_flow_control_structures
+  error - The method 'Center' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:203:26 - undefined_method
+  error - The method 'Text' isn't defined for the type '_HomePageState' - packages\upi_india\example\lib\main.dart:204:28 - undefined_method
+   info - Unnecessary 'this.' qualifier - packages\upi_india\lib\upi_app.dart:236:5 - unnecessary_this
+   info - Unnecessary 'this.' qualifier - packages\upi_india\lib\upi_app.dart:237:5 - unnecessary_this
+   info - An uninitialized field should have an explicit type annotation - packages\upi_india\lib\upi_exception.dart:2:9 - prefer_typing_uninitialized_variables
+   info - An uninitialized field should have an explicit type annotation - packages\upi_india\lib\upi_exception.dart:3:9 - prefer_typing_uninitialized_variables
+   info - The member 'toString' overrides an inherited member but isn't annotated with '@override' - packages\upi_india\lib\upi_exception.dart:7:10 - annotate_overrides
+  error - Target of URI doesn't exist: 'package:flutter/services.dart' - packages\upi_india\lib\upi_india.dart:4:8 - uri_does_not_exist
+  error - Undefined class 'MethodChannel' - packages\upi_india\lib\upi_india.dart:80:15 - undefined_class
+  error - The name 'MethodChannel' isn't a class - packages\upi_india\lib\upi_india.dart:83:22 - creation_with_non_type
+  error - The name 'PlatformException' isn't a type and can't be used in an on-catch clause - packages\upi_india\lib\upi_india.dart:106:10 - non_type_in_catch_clause
+   info - The local variable '_validApps' starts with an underscore - packages\upi_india\lib\upi_india.dart:115:18 - no_leading_underscores_for_local_identifiers
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty - packages\upi_india\lib\upi_india.dart:116:32 - prefer_is_empty
+   info - Function literals shouldn't be passed to 'forEach' - packages\upi_india\lib\upi_india.dart:118:19 - avoid_function_literals_in_foreach_calls
+   info - Function literals shouldn't be passed to 'forEach' - packages\upi_india\lib\upi_india.dart:128:11 - avoid_function_literals_in_foreach_calls
+   info - Don't invoke 'print' in production code - packages\upi_india\lib\upi_india.dart:217:7 - avoid_print
+   info - Don't invoke 'print' in production code - packages\upi_india\lib\upi_india.dart:220:7 - avoid_print
+  error - The name 'PlatformException' isn't defined, so it can't be used in an 'is' expression - packages\upi_india\lib\upi_india.dart:237:26 - type_test_with_undefined_name
+   info - The local variable '_parts' starts with an underscore - packages\upi_india\lib\upi_response.dart:23:18 - no_leading_underscores_for_local_identifiers
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:35:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:37:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:39:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:41:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:50:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:52:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:54:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:56:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - packages\upi_india\lib\upi_response.dart:58:7 - curly_braces_in_flow_control_structures
+   info - The constant name 'SUCCESS' isn't a lowerCamelCase identifier - packages\upi_india\lib\upi_response.dart:66:23 - constant_identifier_names
+   info - The constant name 'SUBMITTED' isn't a lowerCamelCase identifier - packages\upi_india\lib\upi_response.dart:69:23 - constant_identifier_names
+   info - The constant name 'FAILURE' isn't a lowerCamelCase identifier - packages\upi_india\lib\upi_response.dart:72:23 - constant_identifier_names
+   info - The constant name 'OTHER' isn't a lowerCamelCase identifier - packages\upi_india\lib\upi_response.dart:75:23 - constant_identifier_names
+  error - Target of URI doesn't exist: 'package:flutter/services.dart' - packages\upi_india\test\upi_india_test.dart:1:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'package:flutter_test/flutter_test.dart' - packages\upi_india\test\upi_india_test.dart:2:8 - uri_does_not_exist
+  error - Undefined class 'MethodChannel' - packages\upi_india\test\upi_india_test.dart:5:9 - undefined_class
+  error - Const variables must be initialized with a constant value - packages\upi_india\test\upi_india_test.dart:5:33 - const_initialized_with_non_constant_value
+  error - The function 'MethodChannel' isn't defined - packages\upi_india\test\upi_india_test.dart:5:33 - undefined_function
+  error - Undefined name 'TestWidgetsFlutterBinding' - packages\upi_india\test\upi_india_test.dart:7:3 - undefined_identifier
+  error - The function 'setUp' isn't defined - packages\upi_india\test\upi_india_test.dart:9:3 - undefined_function
+  error - Undefined class 'MethodCall' - packages\upi_india\test\upi_india_test.dart:10:39 - undefined_class
+  error - The function 'tearDown' isn't defined - packages\upi_india\test\upi_india_test.dart:15:3 - undefined_function
+warning - Unused import: 'package:flutter/services.dart' - test\user_controller_test.dart:1:8 - unused_import
+warning - Unused import: 'package:firebase_core/firebase_core.dart' - test\user_controller_test.dart:3:8 - unused_import
+   info - 'setMockMethodCallHandler' is deprecated and shouldn't be used. Use tester.binding.defaultBinaryMessenger.setMockMethodCallHandler or TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler instead. Pass the channel as the first argument. This feature was deprecated after v3.9.0-19.0.pre - test\user_home_test.dart:54:13 - deprecated_member_use
+

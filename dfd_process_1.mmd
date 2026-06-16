@@ -1,0 +1,43 @@
+flowchart LR
+    %% Base styling to ensure white background
+    classDef default fill:#fff,stroke:#333,stroke-width:2px,color:#000;
+    
+    %% External Entities (Rectangles)
+    Student[[Student]]
+    Instructor[[Instructor]]
+    Admin[[Admin]]
+    SuperAdmin[[Super Admin]]
+
+    %% Processes (Circles/Ovals) for Process 1.0 Expansion
+    P1_1((1.1<br/>Register<br/>User))
+    P1_2((1.2<br/>Authenticate<br/>Login))
+    P1_3((1.3<br/>Manage<br/>Profiles))
+    P1_4((1.4<br/>Verify &<br/>Approve))
+    P1_5((1.5<br/>Role & Branch<br/>Assignment))
+
+    %% Data Stores
+    D1[(D1: User DB)]
+
+    %% Data Flows
+    Student -->|Signup Details| P1_1
+    Instructor -->|Signup Details| P1_1
+    P1_1 -->|New Record| D1
+
+    Student -->|Credentials| P1_2
+    Instructor -->|Credentials| P1_2
+    Admin -->|Credentials| P1_2
+    SuperAdmin -->|Credentials| P1_2
+    D1 -->|Validation Check| P1_2
+    P1_2 -->|Access Token| Student
+
+    Student -->|Update Info/Settings| P1_3
+    Instructor -->|Update Info/Settings| P1_3
+    P1_3 -->|Write Data| D1
+    D1 -->|Read Data| P1_3
+
+    Admin -->|Review Uploaded Docs| P1_4
+    D1 -->|Pending Verification| P1_4
+    P1_4 -->|Status Update| D1
+
+    SuperAdmin -->|Assign Admins to Branches| P1_5
+    P1_5 -->|Role Data| D1

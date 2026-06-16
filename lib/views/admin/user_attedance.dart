@@ -67,6 +67,56 @@ class UserAttendance extends StatelessWidget {
                     ],
                   ),
                 ),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(bottom: 10),
+                  child: Text(
+                    'Instructor: $trainerName',
+                    style: GoogleFonts.epilogue(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey[700],
+                    ),
+                  ),
+                ),
+                // Course Completion Switch
+                Consumer<AdminController>(
+                  builder: (context, controller, child) {
+                    // Find the user in the list to get current status
+                    // We might need to fetch users if not ensuring the list is fresh, but assuming usersDataList is populated
+                    final userIndex = controller.usersDataList.indexWhere((u) => u.userID == userID);
+                    final isCompleted = userIndex != -1 ? (controller.usersDataList[userIndex].isCourseCompleted ?? false) : false;
+
+                    return Container(
+                      margin: const EdgeInsets.only(bottom: 10),
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade50,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.blue.shade100),
+                      ),
+                      child: SwitchListTile(
+                        title: Text(
+                          "Course Completed?",
+                          style: GoogleFonts.epilogue(
+                            fontWeight: FontWeight.w600, 
+                            fontSize: 14,
+                            color: Colors.blue.shade900
+                          ),
+                        ),
+                        subtitle: Text(
+                          isCompleted ? "User can download certificate" : "Download restricted",
+                          style: GoogleFonts.epilogue(fontSize: 12, color: Colors.grey),
+                        ),
+                        value: isCompleted,
+                        activeColor: Colors.blue,
+                        onChanged: (val) {
+                          controller.updateCourseCompletionStatus(userID, val, context);
+                        },
+                      ),
+                    );
+                  },
+                ),
                 Expanded(
                   child: Consumer<AdminController>(
                       builder: (context, attListController, _) {

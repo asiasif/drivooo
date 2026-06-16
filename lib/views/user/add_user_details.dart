@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:provider/provider.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:driving_school/services/document_scanner_service.dart';
 
 import '../../controller/user_controller.dart';
 
@@ -65,9 +67,38 @@ class AddUserDetails extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Set your account information',
-                    style: GoogleFonts.epilogue(fontSize: 18),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Set your account information',
+                        style: GoogleFonts.epilogue(fontSize: 14, fontWeight: FontWeight.bold),
+                      ),
+                      ElevatedButton.icon(
+                        onPressed: () async {
+                           final ImagePicker picker = ImagePicker();
+                           final XFile? image = await picker.pickImage(source: ImageSource.camera); // or gallery
+                           if (image != null) {
+                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Scanning Document with AI...')));
+                              final scannedData = await DocumentScannerService.scanDocument(image);
+                              
+                              if (scannedData != null && scannedData.name != null) {
+                                  userDetailsController.usernameController.text = scannedData.name!;
+                                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Auto-Fill Complete!'), backgroundColor: Colors.green));
+                              } else {
+                                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Failed to read name. Please enter manually.'), backgroundColor: Colors.orange));
+                              }
+                           }
+                        },
+                        icon: const Icon(Icons.document_scanner, size: 16),
+                        label: const Text('Auto-Fill ID', style: TextStyle(fontSize: 12)),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.amber, 
+                          foregroundColor: Colors.black,
+                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(
                     height: 20,
@@ -169,42 +200,34 @@ class AddUserDetails extends StatelessWidget {
                         backgroundColor:
                             const MaterialStatePropertyAll(defaultBlue),
                       ),
-                      onPressed: () {
+                      onPressed: () async {
                         if (userDetailsController.userDetailsKey.currentState!
                             .validate()) {
-                          userDetailsController
-                              .saveUser(
-                                  userDetailsController.uid,
-                                  userDetailsController.usernameController.text,
-                                  userDetailsController.userEmailController.text
-                                      .trim(),
-                                  int.parse(userDetailsController
-                                      .numberController.text
-                                      .trim()))
-                              .then(
-                                (value) => userDetailsController
-                                    .uploadProPic(
-                                        userDetailsController.proPic!,
-                                        'Users Profile Pic',
-                                        userDetailsController.uid)
-                                    .whenComplete(
-                                      () => Navigator.of(context)
-                                          .pushAndRemoveUntil(
-                                              MaterialPageRoute(
-                                                builder: (context) => UserHome(
-                                                    uid: userDetailsController
-                                                        .firebaseAuth
-                                                        .currentUser!
-                                                        .uid),
-                                              ),
-                                              (route) => false),
-                                    ),
-                              );
-                          // Navigator.of(context).push(
-                          //   MaterialPageRoute(
-                          //     builder: (context) => const UserHome(),
-                          //   ),
-                          // );
+                          
+                          // Save user details first
+                          await userDetailsController.saveUser(
+                              userDetailsController.uid,
+                              userDetailsController.usernameController.text,
+                              userDetailsController.userEmailController.text.trim(),
+                              int.parse(userDetailsController.numberController.text.trim())
+                          );
+
+                          // Upload profile pic only if one is selected
+                          if (userDetailsController.proPic != null) {
+                             await userDetailsController.uploadProPic(
+                                userDetailsController.proPic!,
+                                'Users Profile Pic',
+                                userDetailsController.uid
+                             );
+                          }
+
+                          // Navigate to Home
+                          Navigator.of(context).pushAndRemoveUntil(
+                              MaterialPageRoute(
+                                builder: (context) => UserHome(
+                                    uid: userDetailsController.uid),
+                              ),
+                              (route) => false);
                         }
                       },
                       child: Text(

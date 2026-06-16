@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:provider/provider.dart';
 
-class ChoosePayment extends StatelessWidget {
+class ChoosePayment extends StatefulWidget {
   final double price;
   final String userName;
   final String courseName;
@@ -19,6 +19,17 @@ class ChoosePayment extends StatelessWidget {
     required this.invoiceDate,
     super.key,
   });
+
+  @override
+  State<ChoosePayment> createState() => _ChoosePaymentState();
+}
+
+class _ChoosePaymentState extends State<ChoosePayment> {
+  @override
+  void initState() {
+    Provider.of<PaymentGateway>(context, listen: false).getAllApps();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,44 +78,60 @@ class ChoosePayment extends StatelessWidget {
                     ],
                   ),
                 ),
-                Consumer2<PaymentGateway, UserController>(
-                  builder:
-                      (context, paymentMode, userPaymentController, child) {
-                    return FutureBuilder(
-                      future: paymentMode.getAllApps(),
-                      builder: (context, snapshot) {
-                        return snapshot.connectionState ==
-                                ConnectionState.waiting
-                            ? const Center(
-                                child: CircularProgressIndicator(),
-                              )
-                            : paymentMode.displayUpiApps(
-                                'sanayuj2255@oksbi',
-                                'Driving School',
-                                price,
-                                context,
-                                () {
-                                  userPaymentController
-                                      .saveInvoice(userName, courseName,
-                                          invoiceDate, price)
-                                      .then(
-                                        (value) => userPaymentController
-                                            .updateCourse(courseName),
-                                      )
-                                      .then(
-                                        (value) => Navigator.of(context).push(
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Consumer2<PaymentGateway, UserController>(
+                          builder: (context, paymentMode, userPaymentController,
+                              child) {
+                            return Center(
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 40.0),
+                                child: paymentMode.displayUpiApps(
+                                  '9747790366@ibl',
+                                  'Fathimath Suhara',
+                                  widget.price,
+                                  context,
+                                  () {
+                                    userPaymentController
+                                        .saveInvoice(
+                                            widget.userName,
+                                            widget.courseName,
+                                            widget.invoiceDate,
+                                            widget.price)
+                                        .then(
+                                          (value) => userPaymentController
+                                              .updateCourse(widget.courseName),
+                                        )
+                                        .then(
+                                      (value) {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          const SnackBar(
+                                            backgroundColor: Colors.green,
+                                            content: Text(
+                                                'Course purchased successfully'),
+                                          ),
+                                        );
+                                        Navigator.of(context).push(
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 const PaymentSuccessful(),
                                           ),
-                                        ),
-                                      );
-                                },
-                              );
-                      },
-                    );
-                  },
-                )
+                                        );
+                                      },
+                                    );
+                                  },
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 // Expanded(
                 //   child: ListView.separated(
                 //       itemBuilder: (context, index) {

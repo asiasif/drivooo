@@ -3,6 +3,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:driving_school/services/pdf_attendance_service.dart';
+import 'package:driving_school/models/rating_model.dart'; // Added
+import 'package:driving_school/controller/user_controller.dart'; // Ensure UserController is imported
+import 'package:flutter_rating_bar/flutter_rating_bar.dart'; // Added
 import 'package:provider/provider.dart';
 
 class History extends StatelessWidget {
@@ -117,6 +121,94 @@ class History extends StatelessWidget {
                                                   ],
                                                 ),
                                               ),
+                                            trailing: Row(
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: [
+                                                  IconButton(
+                                                  onPressed: () {
+                                                    // Show Rating Dialog
+                                                    showDialog(context: context, builder: (context) {
+                                                      double ratingScore = 5.0;
+                                                      TextEditingController commentController = TextEditingController();
+                                                      return AlertDialog(
+                                                        title: Text('Rate ${historyController.attList[index].trainerName}'),
+                                                        content: Column(
+                                                          mainAxisSize: MainAxisSize.min,
+                                                          children: [
+                                                            RatingBar.builder(
+                                                              initialRating: 5,
+                                                              minRating: 1,
+                                                              direction: Axis.horizontal,
+                                                              allowHalfRating: true,
+                                                              itemCount: 5,
+                                                              itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+                                                              itemBuilder: (context, _) => const Icon(
+                                                                Icons.star,
+                                                                color: Colors.amber,
+                                                              ),
+                                                              onRatingUpdate: (rating) {
+                                                                ratingScore = rating;
+                                                              },
+                                                            ),
+                                                            const SizedBox(height: 10),
+                                                            TextField(
+                                                              controller: commentController,
+                                                              decoration: const InputDecoration(
+                                                                hintText: 'Leave a comment (Optional)',
+                                                                border: OutlineInputBorder(),
+                                                              ),
+                                                              maxLines: 3,
+                                                            ),
+                                                          ],
+                                                        ),
+                                                        actions: [
+                                                          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel')),
+                                                          TextButton(
+                                                            onPressed: () {
+                                                              final userController = Provider.of<UserController>(context, listen: false);
+                                                              final attendance = historyController.attList[index];
+                                                              
+                                                              // Create Rating Model
+                                                              // Note: associating via Name since ID is missing in AttendanceModel
+                                                              RatingModel newRating = RatingModel(
+                                                                ratingID: DateTime.now().millisecondsSinceEpoch.toString(),
+                                                                instructorID: attendance.trainerName, // Using Name as ID for now
+                                                                studentID: attendance.userID,
+                                                                studentName: 'Student', // Ideally fetch user name
+                                                                score: ratingScore,
+                                                                comment: commentController.text,
+                                                                timestamp: DateTime.now().toString(),
+                                                              );
+                                                              
+                                                              userController.addRating(newRating, context);
+                                                              Navigator.pop(context);
+                                                            },
+                                                            child: const Text('Submit'),
+                                                          ),
+                                                        ],
+                                                      );
+                                                    });
+                                                  },
+                                                  icon: const Icon(Icons.star_rate, color: Colors.amber),
+                                                ),
+                                                InkWell(
+                                                  onTap: () async {
+                                                    ScaffoldMessenger.of(context).showSnackBar(
+                                                      const SnackBar(content: Text('Generating PDF...')),
+                                                    );
+                                                    try {
+                                                      final attendance = historyController.attList[index];
+                                                      await PdfAttendanceService.generate(attendance);
+                                                    } catch (e) {
+                                                      ScaffoldMessenger.of(context).showSnackBar(
+                                                        SnackBar(content: Text('Error generating PDF: $e')),
+                                                      );
+                                                    }
+                                                  },
+                                                  child: Image.asset('assets/invoice_tail.png'),
+                                                ),
+                                              ],
+                                            ),
                                             ),
                                           ),
                                         );

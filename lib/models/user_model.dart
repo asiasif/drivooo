@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 class UserModel {
   String userID;
   String userName;
@@ -6,7 +8,10 @@ class UserModel {
   String? userProPic;
   String? selectedCourse;
   String? selectedInstructor;
+  String? instructorSelectionDate;
   List? userAttendance;
+  bool? hasUnreadMessages;
+  bool? isCourseCompleted;
 
   UserModel({
     required this.userID,
@@ -16,10 +21,25 @@ class UserModel {
     this.userProPic,
     this.selectedCourse,
     this.selectedInstructor,
+    this.instructorSelectionDate,
     this.userAttendance,
+    this.hasUnreadMessages,
+    this.isCourseCompleted,
   });
 
   factory UserModel.fromMap(Map<String, dynamic> map) {
+    String today = DateFormat('yyyy-MM-dd').format(DateTime.now());
+    String? assignedInstructor = map['selectedInstructor'];
+    String? assignedDate = map['instructorSelectionDate'];
+
+    // DAILY RESET: If the instructor was selected on a previous day, reset it locally.
+    if (assignedInstructor != null && assignedInstructor != 'No Instructor Selected') {
+      if (assignedDate != today) {
+        assignedInstructor = 'No Instructor Selected';
+        assignedDate = null;
+      }
+    }
+
     return UserModel(
       userID: map['userID'],
       userName: map['userName'],
@@ -27,8 +47,11 @@ class UserModel {
       userNumber: map['userNumber'],
       userProPic: map['userProPic'],
       selectedCourse: map['selectedCourse'],
-      selectedInstructor: map['selectedInstructor'],
+      selectedInstructor: assignedInstructor,
+      instructorSelectionDate: assignedDate,
       userAttendance: map['userAttendance'] ?? [],
+      hasUnreadMessages: map['hasUnreadMessages'] ?? false,
+      isCourseCompleted: map['isCourseCompleted'] ?? false,
     );
   }
 
@@ -41,7 +64,10 @@ class UserModel {
       'userProPic': userProPic,
       'selectedCourse': selectedCourse,
       'selectedInstructor': selectedInstructor,
+      'instructorSelectionDate': instructorSelectionDate,
       'userAttendance': userAttendance,
+      'hasUnreadMessages': hasUnreadMessages,
+      'isCourseCompleted': isCourseCompleted,
     };
   }
 }

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:driving_school/views/user/chat_screen.dart'; // Added
 
 class ContactUs extends StatelessWidget {
   const ContactUs({super.key});
@@ -120,6 +122,19 @@ class ContactUs extends StatelessWidget {
                                                     ],
                                                   ),
                                                 ),
+                                                trailing: IconButton.outlined(
+                                                  onPressed: () async {
+                                                    final Uri launchUri = Uri(
+                                                      scheme: 'tel',
+                                                      path: contactController
+                                                          .contactsList[index]
+                                                          .contactNumber
+                                                          .toString(),
+                                                    );
+                                                    await launchUrl(launchUri);
+                                                  },
+                                                  icon: const Icon(Icons.call),
+                                                ),
                                               ),
                                             );
                                           },
@@ -136,6 +151,17 @@ class ContactUs extends StatelessWidget {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) =>  ChatScreen()),
+          );
+        },
+        label: const Text('Chat with Admin'),
+        icon: const Icon(EvaIcons.message_circle_outline),
+        backgroundColor: Colors.blue,
       ),
     );
   }

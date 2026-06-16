@@ -1,0 +1,2 @@
+C:/Users/USER/Desktop/doctordriving/driving_school_project/android/app/.cxx/Debug/4m3y6o1q/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/USER/Desktop/doctordriving/driving_school_project/android/app/.cxx/Debug/4m3y6o1q/x86_64/CMakeFiles/rebuild_cache.dir

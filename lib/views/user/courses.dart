@@ -164,29 +164,34 @@ class Courses extends StatelessWidget {
                                                                       .white),
                                                         ),
                                                         Text(
-                                                          courseController
-                                                              .coursesList[
-                                                                  index]
-                                                              .courseName,
-                                                          style: GoogleFonts
-                                                              .epilogue(
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                  fontSize: 12),
+                                                          courseController.coursesList[index].courseName,
+                                                          style: GoogleFonts.epilogue(
+                                                            color: Colors.white,
+                                                            fontWeight: FontWeight.w500,
+                                                            fontSize: 12,
+                                                          ),
+                                                        ),
+                                                        Row(
+                                                          children: [
+                                                            const Icon(Icons.access_time_rounded, color: Colors.white, size: 14),
+                                                            const SizedBox(width: 4),
+                                                            Text(
+                                                              '${courseController.coursesList[index].courseHours} Hours',
+                                                              style: GoogleFonts.epilogue(
+                                                                color: Colors.white,
+                                                                fontWeight: FontWeight.w500,
+                                                                fontSize: 12,
+                                                              ),
+                                                            ),
+                                                          ],
                                                         ),
                                                         Text(
                                                           '₹${courseController.coursesList[index].coursePrice}',
-                                                          style: GoogleFonts
-                                                              .fraunces(
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                  fontSize: 20),
+                                                          style: GoogleFonts.fraunces(
+                                                            color: Colors.white,
+                                                            fontWeight: FontWeight.w500,
+                                                            fontSize: 20,
+                                                          ),
                                                         ),
                                                       ],
                                                     ),

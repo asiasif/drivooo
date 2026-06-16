@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFD Level 2 - DRIVO</title>
+    <style>
+        body {
+            /* Force a solid white background and add generous padding */
+            background-color: #ffffff;
+            color: #000000;
+            padding: 80px; 
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 95vw;
+        }
+        .mermaid {
+            background-color: #ffffff; 
+            padding: 40px;
+            /* Allow horizontal scrolling if it gets too wide */
+            overflow-x: auto; 
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Level 2 Data Flow Diagram</h2>
+        <h3>Driving School Management System - Course and Booking</h3>
+        <p>Right-click the diagram and select <strong>"Save image as..."</strong> (or take a screenshot)</p>
+        <br>
+        <div class="mermaid">
+flowchart LR
+    %% Base styling to ensure white background
+    classDef default fill:#fff,stroke:#333,stroke-width:2px,color:#000;
+    
+    %% External Entities (Rectangles)
+    Student[[Student]]
+    Admin[[Admin]]
+    Instructor[[Instructor]]
+
+    %% Processes (Circles/Ovals) for Process 2.0 Expansion
+    P2_1((2.1<br/>Manage<br/>Courses))
+    P2_2((2.2<br/>Manage<br/>Time Slots))
+    P2_3((2.3<br/>Browse<br/>Offerings))
+    P2_4((2.4<br/>Request<br/>Booking))
+    P2_5((2.5<br/>Assign &<br/>Confirm))
+    P2_6((2.6<br/>View<br/>Schedule))
+
+    %% Data Stores (Open-ended rectangles)
+    D2_1[(D2.1: Course DB)]
+    D2_2[(D2.2: Time Slot DB)]
+    D2_3[(D2.3: Booking DB)]
+
+    %% Data Flows
+    Admin -->|Add/Update Course Details| P2_1
+    P2_1 -->|Course Data| D2_1
+
+    Admin -->|Create Slots, Set Boundaries| P2_2
+    P2_2 -->|Slot Data| D2_2
+
+    Student -->|Inquiry| P2_3
+    D2_1 -->|Active Courses| P2_3
+    P2_3 -->|Course Info| Student
+
+    Student -->|Select Course & Slot| P2_4
+    P2_4 -->|Read Availability| D2_2
+    P2_4 -->|Booking Request| D2_3
+
+    Admin -->|Review Pending Requests| P2_5
+    D2_3 -->|Pending Bookings| P2_5
+    P2_5 -->|Instructor Assignment| D2_3
+    P2_5 -->|Booking Confirmation| Student
+
+    Instructor -->|Query Daily Schedule| P2_6
+    D2_3 -->|Confirmed Bookings| P2_6
+    P2_6 -->|Schedule Details| Instructor
+        </div>
+    </div>
+    
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ 
+          startOnLoad: true,
+          theme: 'default',
+          securityLevel: 'loose'
+      });
+    </script>
+</body>
+</html>

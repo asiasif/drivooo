@@ -4,6 +4,7 @@ import 'package:driving_school/controller/user_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:driving_school/views/user/edit_profile_screen.dart'; // Correctly placed import
 import 'package:provider/provider.dart';
 
 class UserProfile extends StatelessWidget {
@@ -11,23 +12,33 @@ class UserProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     final userProfileController = Provider.of<UserController>(context);
     final adminProfileController = Provider.of<AdminController>(context);
-
-    // adminProfileController
-    //     .fetchAtt(userProfileController.firebaseAuth.currentUser!.uid);
-    // print(userProfileController.firebaseAuth.currentUser!.uid);
-
     return Scaffold(
       body: FutureBuilder(
-          future: adminProfileController
-              .fetchAtt(userProfileController.firebaseAuth.currentUser!.uid)
-              .then((value) => userProfileController.fetchInvoices()),
+          future: Future.wait([
+            adminProfileController.fetchAtt(userProfileController.firebaseAuth.currentUser!.uid),
+            userProfileController.fetchInvoices(),
+            adminProfileController.fetchCourses(),
+          ]),
           builder: (context, snapshot) {
             print(userProfileController.invoiceList.length);
             print(adminProfileController.attList.length);
+            
+            int courseDuration = 30; // Default
+            if (userProfileController.userModel.selectedCourse != null) {
+              try {
+                final course = adminProfileController.coursesList.firstWhere(
+                  (c) => c.courseName == userProfileController.userModel.selectedCourse
+                );
+                courseDuration = course.courseHours;
+              } catch (e) {
+                print("Course not found in list: $e");
+              }
+            }
+
             return snapshot.connectionState == ConnectionState.waiting
                 ? const Center(
                     child: CircularProgressIndicator(),
@@ -68,84 +79,84 @@ class UserProfile extends StatelessWidget {
                               color: Colors.white,
                               child: Padding(
                                 padding: const EdgeInsets.all(15),
-                                child: Expanded(
-                                  child: Column(
-                                    children: [
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
-                                      SizedBox(
-                                        width: width,
-                                        child: Card(
-                                          color: defaultBlue,
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(10.0),
-                                            child: userProfileController
-                                                        .userModel
-                                                        .selectedCourse ==
-                                                    null
-                                                ? Center(
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsets.all(
-                                                              50.0),
-                                                      child: Text(
-                                                        'No Course Selected',
-                                                        style: GoogleFonts
-                                                            .epilogue(),
+                                child: Column(
+                                  children: [
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    SizedBox(
+                                      width: width,
+                                      child: Card(
+                                        color: defaultBlue,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(10.0),
+                                          child: userProfileController
+                                                      .userModel
+                                                      .selectedCourse ==
+                                                  null
+                                              ? Center(
+                                                  child: Padding(
+                                                    padding:
+                                                        const EdgeInsets.all(
+                                                            50.0),
+                                                    child: Text(
+                                                      'No Course Selected',
+                                                      style: GoogleFonts
+                                                          .epilogue(),
+                                                    ),
+                                                  ),
+                                                )
+                                              : Column(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .center,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment
+                                                          .start,
+                                                  children: [
+                                                    Text(
+                                                      userProfileController
+                                                          .userModel
+                                                          .selectedCourse!,
+                                                      style: GoogleFonts
+                                                          .epilogue(
+                                                        color: Colors.white,
                                                       ),
                                                     ),
-                                                  )
-                                                : Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .start,
-                                                    children: [
-                                                      Text(
-                                                        userProfileController
-                                                            .userModel
-                                                            .selectedCourse!,
-                                                        style: GoogleFonts
-                                                            .epilogue(
-                                                          color: Colors.white,
-                                                        ),
+                                                    const SizedBox(
+                                                      height: 10,
+                                                    ),
+                                                    Text(
+                                                      '$courseDuration Days',
+                                                      style: GoogleFonts
+                                                          .epilogue(
+                                                        color: Colors.white,
                                                       ),
-                                                      const SizedBox(
-                                                        height: 10,
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 10,
+                                                    ),
+                                                    Text(
+                                                      'Due Date : ${userProfileController.invoiceList.isNotEmpty ? userProfileController.invoiceList[0].dueDate : "N/A"}',
+                                                      style: GoogleFonts
+                                                          .epilogue(
+                                                        color: Colors.white,
                                                       ),
-                                                      Text(
-                                                        '30 Days',
-                                                        style: GoogleFonts
-                                                            .epilogue(
-                                                          color: Colors.white,
-                                                        ),
-                                                      ),
-                                                      const SizedBox(
-                                                        height: 10,
-                                                      ),
-                                                      Text(
-                                                        'Due Date : ${userProfileController.invoiceList[0].dueDate}',
-                                                        style: GoogleFonts
-                                                            .epilogue(
-                                                          color: Colors.white,
-                                                        ),
-                                                      ),
-                                                      const SizedBox(
-                                                        height: 10,
-                                                      ),
-                                                    ],
-                                                  ),
-                                          ),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 10,
+                                                    ),
+                                                  ],
+                                                ),
                                         ),
                                       ),
-                                      const SizedBox(
-                                        height: 10,
-                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    if (userProfileController.userModel.selectedCourse != null) ...[
                                       Text(
-                                        'Your Due Date',
+                                        'Days Remaining',
                                         style:
                                             GoogleFonts.epilogue(fontSize: 15),
                                       ),
@@ -176,7 +187,7 @@ class UserProfile extends StatelessWidget {
                                                 MainAxisAlignment.center,
                                             children: [
                                               Text(
-                                                '${30 - adminProfileController.attList.length}',
+                                                '${courseDuration - adminProfileController.attList.length}',
                                                 style: GoogleFonts.fraunces(
                                                     fontSize: 22,
                                                     fontWeight:
@@ -193,8 +204,8 @@ class UserProfile extends StatelessWidget {
                                           ),
                                         ),
                                       )
-                                    ],
-                                  ),
+                                    ]
+                                  ],
                                 ),
                               ),
                             ),
@@ -249,14 +260,23 @@ class UserProfile extends StatelessWidget {
                             const SizedBox(
                               width: 20,
                             ),
-                            Text(
-                              'Profile',
-                              style: GoogleFonts.epilogue(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.w500,
+                            Expanded( 
+                              child: Text(
+                                'Profile',
+                                style: GoogleFonts.epilogue(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w500,
+                                ),
                               ),
                             ),
+                             IconButton(
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (_) => const EditProfileScreen()));
+                              },
+                              icon: const Icon(EvaIcons.edit_2_outline, color: Colors.white),
+                            ),
+                            const SizedBox(width: 20),
                           ],
                         ),
                       ),

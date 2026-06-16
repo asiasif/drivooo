@@ -1,0 +1,8 @@
+
+Running Gradle task 'assembleRelease'...                        
+Font asset "MingCute.ttf" was tree-shaken, reducing it from 691744 to 920 bytes (99.9% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "HeroIcons.ttf" was tree-shaken, reducing it from 66792 to 812 bytes (98.8% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "MaterialIcons-Regular.otf" was tree-shaken, reducing it from 1645184 to 10452 bytes (99.4% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "EvaIcons.ttf" was tree-shaken, reducing it from 117504 to 1620 bytes (98.6% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Font asset "iconsax.ttf" was tree-shaken, reducing it from 1292372 to 1548 bytes (99.9% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Running Gradle task 'assembleRelease'...                          290.9s

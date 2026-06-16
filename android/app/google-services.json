@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1094031484275",
-    "project_id": "drivingschool-646e1",
-    "storage_bucket": "drivingschool-646e1.appspot.com"
+    "project_number": "992925327648",
+    "project_id": "driving-school-ad326",
+    "storage_bucket": "driving-school-ad326.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1094031484275:android:09b2eeaf522a56c58fd106",
+        "mobilesdk_app_id": "1:992925327648:android:be9d3dc4426fe49d34b745",
         "android_client_info": {
           "package_name": "com.example.driving_school"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDXFa-fHYOZHyoooVjzGX72nYAVaS-XUH0"
+          "current_key": "AIzaSyAAWuMrxxhtnlO1W2gpGMM_7F9OiOqpyss"
         }
       ],
       "services": {

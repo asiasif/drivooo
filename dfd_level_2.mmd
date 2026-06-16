@@ -1,0 +1,45 @@
+flowchart LR
+    %% Base styling to ensure white background
+    classDef default fill:#fff,stroke:#333,stroke-width:2px,color:#000;
+    
+    %% External Entities (Rectangles)
+    Student[[Student]]
+    Admin[[Admin]]
+    Instructor[[Instructor]]
+
+    %% Processes (Circles/Ovals) for Process 2.0 Expansion
+    P2_1((2.1<br/>Manage<br/>Courses))
+    P2_2((2.2<br/>Manage<br/>Time Slots))
+    P2_3((2.3<br/>Browse<br/>Offerings))
+    P2_4((2.4<br/>Request<br/>Booking))
+    P2_5((2.5<br/>Assign &<br/>Confirm))
+    P2_6((2.6<br/>View<br/>Schedule))
+
+    %% Data Stores (Open-ended rectangles)
+    D2_1[(D2.1: Course DB)]
+    D2_2[(D2.2: Time Slot DB)]
+    D2_3[(D2.3: Booking DB)]
+
+    %% Data Flows
+    Admin -->|Add/Update Course Details| P2_1
+    P2_1 -->|Course Data| D2_1
+
+    Admin -->|Create Slots, Set Boundaries| P2_2
+    P2_2 -->|Slot Data| D2_2
+
+    Student -->|Inquiry| P2_3
+    D2_1 -->|Active Courses| P2_3
+    P2_3 -->|Course Info| Student
+
+    Student -->|Select Course & Slot| P2_4
+    P2_4 -->|Read Availability| D2_2
+    P2_4 -->|Booking Request| D2_3
+
+    Admin -->|Review Pending Requests| P2_5
+    D2_3 -->|Pending Bookings| P2_5
+    P2_5 -->|Instructor Assignment| D2_3
+    P2_5 -->|Booking Confirmation| Student
+
+    Instructor -->|Query Daily Schedule| P2_6
+    D2_3 -->|Confirmed Bookings| P2_6
+    P2_6 -->|Schedule Details| Instructor

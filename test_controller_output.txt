@@ -1,0 +1,8 @@
+00:00 +0: loading C:/Users/USER/Desktop/doctordriving/driving_school_project/test/user_controller_test.dart
+00:00 +0: (setUpAll)
+00:00 +0 -1: (setUpAll) [E]
+  PlatformException(channel-error, Unable to establish connection on channel: "dev.flutter.pigeon.firebase_core_platform_interface.FirebaseCoreHostApi.initializeCore"., null, null)
+  package:firebase_core_platform_interface/src/pigeon/messages.pigeon.dart 301:7  FirebaseCoreHostApi.initializeCore
+  
+00:00 +0 -1: (tearDownAll)
+00:00 +0 -1: Some tests failed.

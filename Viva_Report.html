@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Report: Driving School Management System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        @media print {
+            body {
+                padding: 0;
+                max-width: 100%;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+        .instructions {
+            text-align: center;
+            background: #eef2f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions no-print">
+        <strong>🖨️ How to save this as a PDF:</strong><br>
+        Press <code>Ctrl + P</code> (or right-click and select "Print"), then choose <strong>"Save as PDF"</strong> in the Destination dropdown.
+    </div>
+
+    <h1>Project Viva Report<br><small style="font-size: 1.2rem; font-weight: normal; color: #7f8c8d;">Driving School Management System</small></h1>
+
+    <h2>1. Project Overview</h2>
+    <p>The <strong>Driving School Management System</strong> is a comprehensive, cross-platform mobile application designed to digitize and streamline the operations of a driving school. The system features role-based access for both <strong>Students (Users)</strong> and <strong>Administrators</strong>. It handles the end-to-end lifecycle of a driving school student, including course enrollment, test scheduling, retest management, secure payments, and performance tracking.</p>
+
+    <h2>2. Technology Stack & Core Tools</h2>
+    <ul>
+        <li><strong>App Framework:</strong> Flutter (Allows compiling to Android, iOS, and Web from a single codebase)</li>
+        <li><strong>Programming Language:</strong> Dart (SDK Version 3.1.5+)</li>
+        <li><strong>State Management:</strong> Provider (Used to cleanly separate UI presentation from business logic via controllers like <code>UserController</code> and <code>AdminController</code>)</li>
+        <li><strong>IDE / Developer Tools:</strong> Visual Studio Code / Android Studio</li>
+    </ul>
+
+    <h2>3. Backend & Database Infrastructure</h2>
+    <p>The project uses a <strong>Serverless Backend Architecture</strong> powered primarily by Firebase.</p>
+    <ul>
+        <li><strong>BaaS (Backend-as-a-Service):</strong> Firebase Core</li>
+        <li><strong>Database:</strong> <strong>Cloud Firestore</strong> (A NoSQL, real-time document database used to store unstructured/semi-structured data like user profiles, booking details, test dates, and application statuses).</li>
+        <li><strong>Media Storage:</strong> <strong>Cloudinary</strong> (<code>cloudinary_public</code>) is used as an external API to efficiently upload and serve images and media files (like user avatars or KYC documents), reducing the load on Firebase Storage.</li>
+    </ul>
+
+    <h2>4. APIs, Integrations, and Plugins</h2>
+    <p>The project leverages several powerful APIs and third-party libraries to provide advanced features:</p>
+    <ul>
+        <li><strong>Authentication & Security API:</strong>
+            <ul>
+                <li><strong>Firebase Authentication:</strong> Handles secure user registration and login.</li>
+                <li><strong>Google Sign-In API:</strong> (<code>google_sign_in</code>) Allows users to log in quickly using their Google accounts (OAuth 2.0).</li>
+            </ul>
+        </li>
+        <li><strong>Payment Gateway API:</strong>
+            <ul>
+                <li><strong>UPI India:</strong> (<code>upi_india</code>) Integrated to handle direct, seamless peer-to-peer UPI payments for course enrollments and retest fees without relying on a heavy payment gateway.</li>
+            </ul>
+        </li>
+        <li><strong>Machine Learning (AI) API:</strong>
+            <ul>
+                <li><strong>Google ML Kit:</strong> (<code>google_mlkit_text_recognition</code>) Integrated for Optical Character Recognition (OCR). This allows the app to scan text from images (useful for scanning ID cards or driving licenses).</li>
+            </ul>
+        </li>
+        <li><strong>Notifications API:</strong>
+            <ul>
+                <li><strong>Firebase Cloud Messaging (FCM):</strong> (<code>firebase_messaging</code>) Used to send push notifications to users regarding test date updates or application approvals.</li>
+                <li><strong>Flutter Local Notifications:</strong> Handles the on-device display of these alerts.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>5. UI/UX and Document Generation</h2>
+    <ul>
+        <li><strong>Data Visualization:</strong> <code>fl_chart</code> is used in the Admin section to display interactive graphs and charts (e.g., tracking monthly revenue or student enrollments).</li>
+        <li><strong>Document Generation:</strong> <code>pdf</code> and <code>printing</code> modules are utilized to dynamically generate, view, and print PDF documents (like payment receipts or completion certificates) inside the app.</li>
+        <li><strong>Animations:</strong> <code>lottie</code> is used for high-quality, lightweight vector animations, and <code>shimmer</code> is used for modern loading effects.</li>
+        <li><strong>Localization:</strong> <code>easy_localization</code> and <code>intl</code> are used to support multiple languages (e.g., English and Malayalam), making the app accessible to local users.</li>
+    </ul>
+
+    <h2>6. System Architecture Summary</h2>
+    <p>The app follows a modern <strong>MVC/MVVM-inspired architecture</strong>:</p>
+    <ul>
+        <li><strong>Views:</strong> The UI screens (<code>user_home.dart</code>, <code>my_applications.dart</code>, <code>test_management.dart</code>) reactively rebuild when data changes.</li>
+        <li><strong>Controllers:</strong> Logical classes (<code>AdminController</code>, <code>UserController</code>) that handle the heavy lifting—communicating with the database, manipulating lists, and updating the state.</li>
+        <li><strong>Models:</strong> Data classes (like <code>RetestModel</code> or <code>BookingModel</code>) that map Firestore JSON data into Dart objects.</li>
+    </ul>
+
+    <h2>7. Expected Viva Questions & Answers</h2>
+    <div class="highlight">
+        <strong>Q: Why did you choose Flutter over native Android (Java/Kotlin)?</strong><br>
+        A: Flutter allows us to write one codebase and deploy it to both Android and iOS, saving development time while maintaining native-like performance.
+    </div>
+    <div class="highlight">
+        <strong>Q: Why use Cloudinary alongside Firebase?</strong><br>
+        A: Cloudinary provides excellent on-the-fly image optimization and transformations, which helps load images faster and saves bandwidth compared to raw Firebase storage.
+    </div>
+    <div class="highlight">
+        <strong>Q: How does the state management work in your app?</strong><br>
+        A: We use the <code>Provider</code> package. When data changes in our backend (like an admin assigning a new test date), the controller updates the state and calls <code>notifyListeners()</code>, which instantly updates only the specific UI widgets relying on that data.
+    </div>
+    <div class="highlight">
+        <strong>Q: How do you handle payments natively?</strong><br>
+        A: We integrated the <code>upi_india</code> package, which invokes installed UPI applications (like Google Pay or PhonePe) on the user's phone, completing the transaction securely bank-to-bank.
+    </div>
+
+</body>
+</html>
